@@ -1,8 +1,8 @@
 .jumbotron {
     margin: 10px;
-}
-
-img {
-    width: 100%;
+    background-image: url(../../../assets/wood.jpg);
+    width:98%;
     height: 510px;
 }
+
+
