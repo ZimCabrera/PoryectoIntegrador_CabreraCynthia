@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { RedesSocialesComponent } from './components/redes-sociales/redes-sociales.component'
 import { NavComponent } from './components/nav/nav.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
@@ -16,7 +15,6 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    RedesSocialesComponent,
     NavComponent,
     AcercadeComponent,
     ExperienciaComponent,

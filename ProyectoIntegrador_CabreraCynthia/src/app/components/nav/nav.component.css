@@ -3,6 +3,7 @@ nav {
     justify-content: space-between;
     text-align: center!important;
     padding: 20px 10%;
+    width: 100%;
 }
 
 img.pequeña {
@@ -35,18 +36,92 @@ nav li {
     color:rgb(205, 92, 92);
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28205, 92, 92, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
 }
 
-.navbar-dark .navbar-toggler {
-    border: 2px solid rgb(205, 92, 92);
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
 }
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+}
+
 
 #login {
     margin-left: 20px;
-    padding: 9px 15px;
-    background-color:rgb(205, 92, 92);
+    margin-top: 5px;
+    padding: 4px 15px;
+    background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -54,4 +129,12 @@ nav li {
     font-size: 1.1rem !important;
 }
 
+.dropdown-item img {
+    width: 30px;
+    height: 30px;
+}
 
+.dropdown-item {
+    display:flex;
+    justify-content:center;
+}
