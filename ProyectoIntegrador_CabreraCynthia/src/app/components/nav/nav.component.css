@@ -1,7 +1,8 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center!important;
+    padding: 20px 10%;
 }
 
 img.pequeña {
@@ -20,11 +21,10 @@ img.pequeña-min {
 
 .nav-item {
     font-size: 1.2rem !important;
-    text-align: center;
 }
-.nav-item li {
-    display: inline-block;
-    padding: 0px 20px;
+nav li {
+    display: inline;
+    padding: 0px 10px;
 }
 
 .nav-item li a {
@@ -54,7 +54,4 @@ img.pequeña-min {
     font-size: 1.1rem !important;
 }
 
-#login a:hover {
-    background-color:crimson;
-}
 
