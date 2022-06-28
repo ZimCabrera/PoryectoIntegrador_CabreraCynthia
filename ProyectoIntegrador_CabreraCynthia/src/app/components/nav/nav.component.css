@@ -1,3 +1,9 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 img.pequeña {
    height: 60px;
    width: 95px; 
@@ -7,3 +13,48 @@ img.pequeña-min {
     height: 50px;
     width: 165px;
 }
+
+.navbar {
+    padding: .8rem;
+}
+
+.nav-item {
+    font-size: 1.2rem !important;
+    text-align: center;
+}
+.nav-item li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-item li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-item a:hover {
+    color:rgb(205, 92, 92);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28205, 92, 92, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+    border: 2px solid rgb(205, 92, 92);
+}
+
+#login {
+    margin-left: 20px;
+    padding: 9px 15px;
+    background-color:rgb(205, 92, 92);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s;
+    font-size: 1.1rem !important;
+}
+
+#login a:hover {
+    background-color:crimson;
+}
+
