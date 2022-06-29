@@ -4,6 +4,7 @@ nav {
     text-align: center!important;
     padding: 20px 10%;
     width: 100%;
+    font-family: 'Roboto Slab', serif;
 }
 
 img.pequeña {
@@ -21,7 +22,7 @@ img.pequeña-min {
 }
 
 .nav-item {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
 }
 nav li {
     display: inline;
@@ -32,9 +33,16 @@ nav li {
     transition: all 0.3s ease 0s;
 }
 
+
 .nav-item a:hover {
-    color:rgb(205, 92, 92);
+    border-radius:20px;
+    border-width: 1px;
+    border-style: solid;
+    background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+    margin-top: 5px;
+    padding: 4px 15px;
 }
+
 
 .navbar-toggler {
     width: 20px;
@@ -126,15 +134,21 @@ nav li {
     border-radius: 20px;
     cursor: pointer;
     transition:all 0.3s ease 0s;
-    font-size: 1.1rem !important;
+    font-size: 1.2rem;
 }
 
-.dropdown-item img {
-    width: 30px;
-    height: 30px;
+.dropdown {
+    font-size: 1.2rem;
 }
 
 .dropdown-item {
     display:flex;
     justify-content:center;
+    background: transparent;
+}
+
+
+.dropdown-item img {
+    width: 35px;
+    height: 35px;
 }
