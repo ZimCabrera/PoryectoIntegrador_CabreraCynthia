@@ -4,17 +4,31 @@ html, body {
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
 }
 
+body {
+    height: 500vh;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background:darkslategray;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#ea473f;
+}
 
 a {
     text-decoration: none;
 }
 
-.container {
-    min-height: 100vh;
-    width: 100%;
+.container-fluid {
     display: flex;
     align-items: center;
     justify-content:center;
     font-family: 'Roboto Slab', serif;
 }
   
+    
