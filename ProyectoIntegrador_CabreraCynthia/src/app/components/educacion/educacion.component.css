@@ -1,5 +1,5 @@
-#educacion  {
-    width:100%;
+#educacion {
+    width:97%;
     height: 630px;
     background-size:cover;
     background-position:top-center;
@@ -9,13 +9,12 @@
 
 #educacion::after {
   content: '';
-  position: absolute;
+  position:absolute;
   left: 0;
   top: 0;
-  border-radius: 40px;
+  border-radius: 30px;
   height: 630px;
-  width: 98%;
- 
+  width: 97%;
   background-color: #000000;
   opacity: .3;
   z-index: -1;
