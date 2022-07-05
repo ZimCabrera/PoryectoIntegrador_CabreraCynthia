@@ -1,11 +1,53 @@
+
 .post-heading {
     margin:10px;
     padding: 50px;
 }
 
+.post-heading h1 {
+    color:whitesmoke;
+    font-weight: 400;
+}
+
+.post-heading h2 {
+    color:darkslategray;
+    font-size: 1.8em;
+    font-weight: lighter;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+}
+
+.post-heading p {
+    color:whitesmoke;
+    font-weight: 400;
+}
+
+span {
+  display: inline-block;
+  white-space: nowrap;
+  width: 24ch;
+  animation: typing 2s steps(24), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+from {width: 0}
+}
+
+@keyframes blink {
+50% { border-color: transparent }
+}
+
+.row img { 
+    border: 7px double #ccc;
+    border-radius: 50%;
+    padding: 10px;
+}
 
 .social-links a {
     display: inline-block;
     font-size: 30px;
     margin: 15px;
+    color:darkslategray;
 }
+
