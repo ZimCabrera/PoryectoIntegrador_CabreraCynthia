@@ -141,10 +141,24 @@ nav li {
     font-size: 1.2rem;
 }
 
-.dropdown-item {
-    display:flex;
-    justify-content:center;
-    background: transparent;
+
+.dropdown-menu .dropdown-item {
+    display:inline-flex;
+    justify-content:space-between;
+}
+
+.dropdown-menu a {
+    color:#ccc;
     font-size: 30px;
+    background:transparent;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius:50%;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+    transform: scale(1.2);
 }
 
