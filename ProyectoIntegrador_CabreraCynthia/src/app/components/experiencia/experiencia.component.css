@@ -1,3 +1,13 @@
-.container {
-    padding-top: 50px;
-  }
+#experiencia {
+  width: 100%;
+}
+
+.expe {
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.expe h1 {
+  color:whitesmoke;
+  font-weight: 400;
+}

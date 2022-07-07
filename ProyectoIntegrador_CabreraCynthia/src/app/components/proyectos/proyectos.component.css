@@ -1,4 +1,13 @@
+#proyectos {
+  width: 100%;
+}
 
-.container {
-  padding-top: 50px;
+.proyect {
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.proyect h1 {
+  color:whitesmoke;
+  font-weight: 400;
 }

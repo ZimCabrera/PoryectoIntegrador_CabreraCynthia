@@ -1,4 +1,4 @@
-#skills {
+.info {
     width:100%;
     height: 630px;
     background-size:cover;
@@ -7,18 +7,20 @@
     z-index: 1;
 }
 
-#skills::after {
+.info::after {
   content: '';
   position:absolute;
   left: 0;
   top: 0;
   height: 630px;
   width: 100%;
+  border-radius: 30px;
   background-color: #000000;
   opacity: .3;
   z-index: -1;
 }
 
-.container {
-  padding-top: 50px;
+.info h1 {
+  color:whitesmoke;
+  font-weight: 400;
 }
