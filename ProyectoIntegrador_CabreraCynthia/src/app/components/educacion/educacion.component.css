@@ -3,7 +3,9 @@
 }
 
 .edu {
-  height: 630px;
+  padding: 80px;
+  width: 100%;
+  height: 610px;
   background-size:cover;
   background-position:top-center;
   position: relative;
@@ -12,14 +14,19 @@
 
 .edu::after {
   content: '';
+  background: url(../../../assets/22293.png) no-repeat;
   position:absolute;
   left: 0;
   top: 0;
-  height: 630px;
+  height: 610px;
   width: 100%;
   border-radius: 30px;
-  background-color: #000000;
-  opacity: .3;
+  background-color: #080808;
+  opacity: .9;
   z-index: -1;
 }
 
+h1 {
+  color:whitesmoke;
+  font-weight: 400;
+}

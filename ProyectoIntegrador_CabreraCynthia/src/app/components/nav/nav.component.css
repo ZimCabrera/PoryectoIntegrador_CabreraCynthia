@@ -19,28 +19,41 @@ img.pequeña-min {
 
 .navbar {
     padding: .8rem;
+    border-radius: 0 0 10px 10px;
+    background: rgba(17, 17, 17, 0.951)
 }
+
 
 .nav-item {
     font-size: 1.2rem;
+    font-weight: 400;
 }
+
 nav li {
     display: inline;
     padding: 0px 10px;
 }
 
-.nav-item li a {
-    transition: all 0.3s ease 0s;
+
+span{
+    color:#ea473f;
+    font-weight: 600;
 }
 
 
-.nav-item a:hover {
-    border-radius:20px;
-    border-width: 1px;
-    border-style: solid;
+.nav-item a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    margin-top: 3px;
+    width: 0px;
+    transition: all ease .4s;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
-    margin-top: 5px;
-    padding: 4px 15px;
 }
 
 
@@ -126,16 +139,17 @@ nav li {
 
 
 #login {
-    margin-left: 20px;
-    margin-top: 5px;
-    padding: 4px 15px;
-    background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+    margin-right: 10px;
+    margin: 5px;
+    padding: 3px 12px;
+    font-size: 25px;
+    background: aqua;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
-    transition:all 0.3s ease 0s;
-    font-size: 1.2rem;
+    transition:all 0.2s ease 0s;
 }
+
 
 .dropdown {
     font-size: 1.2rem;
