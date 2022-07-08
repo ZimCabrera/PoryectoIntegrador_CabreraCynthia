@@ -48,12 +48,12 @@ span{
     margin: auto;
     height: 3px;
     margin-top: 3px;
-    width: 0px;
+    width: 80px;
     transition: all ease .4s;
 }
 
 .nav-item a:hover:after {
-    width: 100%;
+    width: 100px;
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
 }
 
