@@ -2,6 +2,9 @@ nav {
     display: flex;
     justify-content: space-between;
     text-align: center!important;
+    background: rgba(24, 24, 24, 0.888);
+    opacity: .9;
+    border-radius: 0 0 15px 15px;
     padding: 20px 10%;
     width: 100%;
     font-family: 'Roboto Slab', serif;
@@ -19,13 +22,11 @@ img.pequeña-min {
 
 .navbar {
     padding: .8rem;
-    border-radius: 0 0 10px 10px;
-    background: rgba(17, 17, 17, 0.951)
 }
 
 
 .nav-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -37,7 +38,7 @@ nav li {
 
 span{
     color:#ea473f;
-    font-weight: 600;
+    font-size:16px;
 }
 
 
@@ -139,11 +140,11 @@ span{
 
 
 #login {
-    margin-right: 10px;
-    margin: 5px;
+    margin: 15px;
     padding: 3px 12px;
-    font-size: 25px;
-    background: aqua;
+    font-size: 30px;
+    color:aqua;
+    background: transparent;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -151,8 +152,9 @@ span{
 }
 
 
+
 .dropdown {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 

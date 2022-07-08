@@ -18,7 +18,7 @@ hr {
   
   .post-heading::after {
     content: '';
-    background: url(../../../assets/22293.png) no-repeat fluid;
+    background: url(../../../assets/22293.png) no-repeat;
     position:absolute;
     left: 0;
     top: 0;
