@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
-import { EducacionComponent } from './components/educacion/educacion.component';
-import { SkillComponent } from './components/skill/skill.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 
@@ -16,8 +14,6 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     HeaderComponent,
     NavComponent,
     AcercadeComponent,
-    EducacionComponent,
-    SkillComponent,
     ProyectosComponent,
   ],
   imports: [

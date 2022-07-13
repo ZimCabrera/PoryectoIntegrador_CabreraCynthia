@@ -1,5 +1,6 @@
 .sobremi {
     width:100%;
+    height: 100%;
 }
 
 hr {
@@ -9,7 +10,7 @@ hr {
 .post-heading {
     padding: 80px;
     width: 100%;
-    height: 610px;
+    height: 100%;
     background-size:cover;
     background-position:top-center;
     position: relative;
@@ -22,7 +23,7 @@ hr {
     position:absolute;
     left: 0;
     top: 0;
-    height: 610px;
+    height: 100%;
     width: 100%;
     border-radius: 30px;
     background-color: #080808;
@@ -31,24 +32,26 @@ hr {
   }
 
 .post-heading h1 {
-    color:whitesmoke;
+    color:antiquewhite;
     font-weight: 400;
+    text-align: center;
 }
 
 .post-heading h2 {
     color:aqua;
+    text-align: center;
     font-size: 1.8em;
     font-weight: lighter;
     word-spacing: 6px;
     letter-spacing: 3px;
 }
 
-.post-heading p {
-    color:whitesmoke;
+#info-perfil p {
+    color:antiquewhite;
     font-weight: 400;
 }
 
-span {
+#sobremi h2 span {
   display: inline-block;
   white-space: nowrap;
   width: 24ch;
@@ -56,15 +59,7 @@ span {
   overflow: hidden;
 }
 
-@keyframes typing {
-from {width: 0}
-}
-
-@keyframes blink {
-50% { border-color: transparent }
-}
-
-.row img { 
+#sobremi img { 
     border: 7px double #ea473f;
     border-radius: 50%;
     padding: 15px;
@@ -73,6 +68,7 @@ from {width: 0}
 .social-links {
     display: flex;
     justify-content:space-around;
+    text-align: center;
 }
 
 .social-links a {
@@ -91,6 +87,133 @@ from {width: 0}
     transform: scale(1.2);
 }
 
+#sobremi .acerca-tabs {
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+#sobremi .acerca-tabs .tab-item {
+    display: inline-block;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    padding: 6px 11px;
+    border-radius: 30px;
+    background: rgb(24, 23, 23);
+    box-shadow: 2px 2px rgb(0, 0, 0, .5);
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color:antiquewhite;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#sobremi .acerca-tabs .tab-item:hover:not(.active) {
+    opacity: 0.4;
+}
+
+#sobremi .acerca-tabs .tab-item.active {
+    color: lightcoral;
+}
+
+#sobremi .experiencia, #sobremi .educacion {
+    padding-bottom:80px;
+}
+
+#sobremi .timeline {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position:relative;
+}
+#sobremi .timeline:before {
+    content: '';
+    width: 1px;
+    height:100%;
+    left: 50%;
+    top: 0;
+    background-color: lightcoral;
+    position: absolute;
+}
+
+#sobremi .timeline .timeline-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+#sobremi .timeline .timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 50px);
+    text-align: right;
+}
+
+#sobremi .timeline .timeline-item:nth-child(even) {
+    padding-left: calc(50% + 50px);
+}
+
+#sobremi .timeline .timeline-item-inner {
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.timeline .timeline-item-inner .icon {
+    height:40px;
+    width: 40px;
+    text-align: center;
+    color:lightcoral;
+    line-height:40px;
+    position:absolute;
+    top: 18px;
+}
+
+.timeline .timeline-item:nth-child(odd) .icon {
+    right:-70px;
+} 
+
+.timeline .timeline-item:nth-child(even) .icon {
+    left:-70px;
+} 
+
+.timeline .timeline-item-inner span {
+    font-weight: 400;
+    color: antiquewhite;
+    display: block;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+.timeline .timeline-item-inner h4 {
+    font-size: 16px;
+    color:antiquewhite;
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+
+.timeline .timeline-item-inner h5 {
+    font-size: 14px;
+    font-style: italic;
+    color:antiquewhite;
+    margin:0;
+}
+
+.timeline .timeline-item-inner p {
+    font-size: 14px;
+    color:antiquewhite;
+    line-height: 26px;
+    margin: 15px 0 0;
+}
+
+
+
+@keyframes typing {
+    from {width: 0}
+}
+    
+@keyframes blink {
+    50% { border-color: transparent }
+}
 
 @media screen and (max-width: 992px) {
     .post-heading {
