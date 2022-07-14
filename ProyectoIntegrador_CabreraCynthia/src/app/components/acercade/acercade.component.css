@@ -1,7 +1,6 @@
 .sobremi {
     width:100%;
     height: 100%;
-
 }
 
 hr {
@@ -20,7 +19,7 @@ hr {
   
   .post-heading::after {
     content: '';
-    background: url(../../../assets/222934.jpg) no-repeat;
+    background: url(../../../assets/222934.jpg);
     position:absolute;
     left: 0;
     top: 0;
@@ -52,7 +51,7 @@ hr {
     font-weight: 400;
 }
 
-#sobremi h2 span {
+.sobremi h2 span {
   display: inline-block;
   white-space: nowrap;
   width: 24ch;
@@ -60,7 +59,7 @@ hr {
   overflow: hidden;
 }
 
-#sobremi img { 
+.sobremi img { 
     border: 7px double #ea473f;
     border-radius: 50%;
     padding: 15px;
@@ -88,43 +87,94 @@ hr {
     transform: scale(1.2);
 }
 
-#sobremi #nav-tab {
-    padding-top: 60px;
+.sobremi .acerca-tabs {
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
 }
 
-#sobremi #nav-tab .nav-link {
+.sobremi .acerca-tabs .tab-item {
     display: inline-block;
     margin: 0 5px 10px;
-    padding: 6px 11px;
+    padding: 5px 10px;
+    border: 1px solid#ea473f;
+    cursor: pointer;
     border-radius: 30px;
     background: rgb(24, 23, 23);
     box-shadow: 2px 2px rgb(0, 0, 0, .5);
     transition: all 0.3s ease;
-    font-size: 18px;
+    font-size: 16px;
     color:antiquewhite;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: capitalize;
 }
 
-#sobremi #nav-tab .nav-link:hover:not(.active) {
+.sobremi .acerca-tabs .tab-item:hover:not(.active) {
     opacity: 0.4;
 }
 
-#sobremi #nav-tab .nav-link.active {
-    color: lightcoral;
+.sobremi .acerca-tabs .tab-item.active {
+    color: #ea473f;
 }
 
+/* tablas */
 
-#sobremi .nav-experiencia, #sobremi .nav-educacion {
+.sobremi .tab-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.sobremi .tab-content.active {
+    display:block;
+}
+
+.sobremi .skills {
+    padding: 0 0 40px;
+}
+
+.sobremi .skills .skill-item {
+    flex: 0 0 50%;
+    max-width:50%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+.sobremi .skills .skill-item p {
+    font-size: 16px;
+    color: antiquewhite;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+.sobremi .skills .skill-item .progress {
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sobremi .skills .skill-item .progress-bar {
+    background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+    height: 6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+}
+
+.sobremi .experiencia, 
+.sobremi .educacion {
     padding-bottom:80px;
 }
 
-#sobremi .tab-pane .timeline {
+.sobremi .timeline {
     flex: 0 0 100%;
     max-width: 100%;
     position:relative;
 }
-#sobremi .tab-pane .timeline:before {
+
+.sobremi .timeline:before {
     content: '';
     width: 1px;
     height:100%;
@@ -134,46 +184,68 @@ hr {
     position: absolute;
 }
 
-#sobremi .tab-pane .timeline .timeline-item {
+.sobremi .timeline .timeline-item {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0 15px;
 }
 
-#sobremi .tab-pane .timeline .timeline-item:nth-child(odd) {
+.sobremi .timeline .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 50px);
     text-align: right;
 }
 
-#sobremi .tab-pane .timeline .timeline-item:nth-child(even) {
+.sobremi .timeline .timeline-item:nth-child(even) {
     padding-left: calc(50% + 50px);
 }
 
-#sobremi .tab-pane .timeline .timeline-item-inner {
+.sobremi .timeline .timeline-item-inner {
     padding: 30px;
     border-radius: 5px;
     position: relative;
 }
 
-#sobremi .tab-pane .timeline .timeline-item-inner .icon {
+.sobremi .timeline .timeline-item-inner:before{
+    content:'';
+    position: absolute;
+    width:30px;
+    height:1px;
+    background-color:lightcoral;
+    top:37px;
+    z-index: -1;
+}
+
+.sobremi .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before{
+    right: -30px;
+}
+
+.sobremi .timeline .timeline-item:nth-child(even) .timeline-item-inner:before{
+    left: -30px;
+}
+
+.sobremi .timeline .timeline-item-inner .icon {
     height:40px;
     width: 40px;
+    background-color:antiquewhite;
     text-align: center;
-    color:lightcoral;
+    border: 1px solid transparent;
     line-height:40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color:lightcoral;
     position:absolute;
     top: 18px;
 }
 
-#sobremi .tab-pane .timeline .timeline-item:nth-child(odd) .icon {
+.sobremi .timeline .timeline-item:nth-child(odd) .icon {
     right:-70px;
 } 
 
-#sobremi .tab-pane .timeline .timeline-item:nth-child(even) .icon {
+.sobremi .timeline .timeline-item:nth-child(even) .icon {
     left:-70px;
 } 
 
-#sobremi .tab-pane .timeline .timeline-item-inner span {
+.sobremi .timeline .timeline-item-inner span {
     font-weight: 400;
     color: antiquewhite;
     display: block;
@@ -181,7 +253,7 @@ hr {
     text-transform: capitalize;
 }
 
-#sobremi .tab-pane .timeline .timeline-item-inner h4 {
+.sobremi .timeline .timeline-item-inner h4 {
     font-size: 16px;
     color:antiquewhite;
     font-weight: 600;
@@ -189,71 +261,18 @@ hr {
     text-transform: capitalize;
 }
 
-#sobremi .tab-pane .timeline .timeline-item-inner h5 {
+.sobremi .timeline .timeline-item-inner h5 {
     font-size: 14px;
     font-style: italic;
     color:antiquewhite;
     margin:0;
 }
 
-#sobremi .tab-pane .timeline .timeline-item-inner p {
+.sobremi .timeline .timeline-item-inner p {
     font-size: 14px;
     color:antiquewhite;
     line-height: 26px;
     margin: 15px 0 0;
-}
-
-#sobremi .tab-content {
-    flex: 0 0 100%;
-    max-width: 100%;
-    display:none;
-}
-
-#sobremi .tab-content.active {
-    display:block;
-}
-
-#sobremi .tab-content {
-    padding: 0 0 40px;
-}
-
-#sobremi #nav-skills .skill-item {
-    flex: 0 0 50%;
-    max-width:50%;
-    padding: 0 15px;
-    margin-bottom: 40px;
-}
-
-#sobremi #nav-skills .skill-item p {
-    font-size: 14px;
-    color: antiquewhite;
-    text-transform: capitalize;
-    margin: 0 0 15px;
-}
-
-#sobremi #nav-skills .skill-item .progress {
-    height: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-
-#sobremi #nav-skills .skill-item .progress-bar {
-    background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
-    height: 6px;
-    left:7px;
-    top:7px;
-    position:absolute;
-    border-radius:10px;
-}
-
-#sobremi #nav-skills .skill-item .progress-bar span {
-    position: absolute;
-    right:0;
-    top:0;
-    font-size:14px;
-    font-weight: 500;
-    color:black;
-    margin-top:-40px;
 }
 
 

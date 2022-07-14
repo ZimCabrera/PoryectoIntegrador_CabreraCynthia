@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
     background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+    overflow-x: hidden;
 }
 
 a {
