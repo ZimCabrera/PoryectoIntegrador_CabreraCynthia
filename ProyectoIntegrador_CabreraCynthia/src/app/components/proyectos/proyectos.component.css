@@ -14,7 +14,7 @@
 
 .proyect::after {
   content: '';
-  background: url(../../../assets/22293.png) no-repeat;
+  background: url() no-repeat;
   position:absolute;
   left: 0;
   top: 0;

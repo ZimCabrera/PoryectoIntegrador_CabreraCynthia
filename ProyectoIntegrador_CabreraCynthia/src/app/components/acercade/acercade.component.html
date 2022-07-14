@@ -21,16 +21,111 @@
         </div>
       </div> 
 
-      <div class="row">
-        <div class="acerca-tabs">
-          <span class="tab-item outer-shadow active" data-target=".educación">Educación</span>
-          <span class="tab-item" data-target=".experiencia">Experiencia</span>
-          <span class="tab-item" data-target=".skills">Skills</span>
+      <nav class="nav justify-content-center">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="true">Skills</button>
+          
+          <button class="nav-link" id="nav-experiencia-tab" data-bs-toggle="tab" data-bs-target="#nav-experiencia" type="button" role="tab" aria-controls="nav-experiencia" aria-selected="false">Experiencia</button>
+          
+          <button class="nav-link" id="nav-educacion-tab" data-bs-toggle="tab" data-bs-target="#nav-educacion" type="button" role="tab" aria-controls="nav-educacion" aria-selected="false">Educación</button>
+          
         </div>
-      </div>
-
-      <div class="row">
-        <div class="educacion tab-content active">
+      </nav>
+      
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab" tabindex="0">
+         
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(50% - 14px)">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(60% - 14px)">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(40% - 14px)">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(80% - 14px)">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="progress inner-shadow">
+                <div class="progress-bar" style="width: calc(90% - 14px)">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+        
+        <div class="tab-pane fade" id="nav-experiencia" role="tabpanel" aria-labelledby="nav-experiencia-tab" tabindex="0">
+        
+              <div class="row">
+                <div class="timeline">
+                  <div class="row">
+                    <div class="timeline-item">
+                      <div class="timeline-item-inner outer-shadow">
+                        <i class="fa-solid fa-certificate icon"></i>
+                        <span>Fecha</span>
+                        <h4>Puesto</h4>
+                        <h5>Empresa, Ciudad</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-item-inner outer-shadow">
+                        <i class="fa-solid fa-certificate icon"></i>
+                        <span>Fecha</span>
+                        <h4>Puesto</h4>
+                        <h5>Empresa, Ciudad</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-item-inner outer-shadow">
+                        <i class="fa-solid fa-certificate icon"></i>
+                        <span>Fecha</span>
+                        <h4>Puesto</h4>
+                        <h5>Empresa, Ciudad</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-item-inner outer-shadow">
+                        <i class="fa-solid fa-certificate icon"></i>
+                        <span>Fecha</span>
+                        <h4>Puesto</h4>
+                        <h5>Empresa, Ciudad</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+        </div>
+        
+        <div class="tab-pane fade" id="nav-educacion" role="tabpanel" aria-labelledby="nav-educacion-tab" tabindex="0">
           <div class="row">
             <div class="timeline">
               <div class="row">
@@ -69,100 +164,6 @@
                     <h5>Empresa, Ciudad</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="experiencia tab-content">
-          <div class="row">
-            <div class="timeline">
-              <div class="row">
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fa-solid fa-certificate icon"></i>
-                    <span>Fecha</span>
-                    <h4>Puesto</h4>
-                    <h5>Empresa, Ciudad</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fa-solid fa-certificate icon"></i>
-                    <span>Fecha</span>
-                    <h4>Puesto</h4>
-                    <h5>Empresa, Ciudad</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fa-solid fa-certificate icon"></i>
-                    <span>Fecha</span>
-                    <h4>Puesto</h4>
-                    <h5>Empresa, Ciudad</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fa-solid fa-certificate icon"></i>
-                    <span>Fecha</span>
-                    <h4>Puesto</h4>
-                    <h5>Empresa, Ciudad</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div clas="row">
-        <div class="skills tab-content">
-          <div class="row">
-            <div class="skill-item">
-              <p>HTML</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(50% - 14px)">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p>HTML</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px)">
-                  <span>60%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p>HTML</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(40% - 14px)">
-                  <span>40%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p>HTML</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(80% - 14px)">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p>HTML</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(90% - 14px)">
-                  <span>90%</span>
                 </div>
               </div>
             </div>
