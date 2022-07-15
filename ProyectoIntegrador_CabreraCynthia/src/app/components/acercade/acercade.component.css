@@ -20,7 +20,6 @@
 
 
 
-
 .sobremi {
     width:100%;
     height: 100%;
@@ -83,7 +82,7 @@ hr {
 }
 
 .sobremi img { 
-    border: 7px double #ea473f;
+    border: 7px double lightcoral;
     border-radius: 50%;
     padding: 15px;
 }
@@ -95,7 +94,7 @@ hr {
 }
 
 .social-links a {
-    color:#ea473f;
+    color:lightcoral;
     font-size: 30px;
     background:rgb(24, 23, 23);
     width: 50px;
@@ -121,7 +120,7 @@ hr {
     display: inline-block;
     margin: 0 5px 10px;
     padding: 5px 10px;
-    border: 1px solid#ea473f;
+    border: 1px solid lightcoral;
     cursor: pointer;
     border-radius: 30px;
     background: rgb(24, 23, 23);
@@ -138,7 +137,7 @@ hr {
 }
 
 .sobremi .acerca-tabs .tab-item.active {
-    color: #ea473f;
+    color: lightcoral;
 }
 
 /* tablas */
@@ -229,23 +228,7 @@ hr {
     position: relative;
 }
 
-.sobremi .timeline .timeline-item-inner:before{
-    content:'';
-    position: absolute;
-    width:30px;
-    height:1px;
-    background-color:lightcoral;
-    top:37px;
-    z-index: -1;
-}
 
-.sobremi .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before{
-    right: -30px;
-}
-
-.sobremi .timeline .timeline-item:nth-child(even) .timeline-item-inner:before{
-    left: -30px;
-}
 
 .sobremi .timeline .timeline-item-inner .icon {
     height:40px;
