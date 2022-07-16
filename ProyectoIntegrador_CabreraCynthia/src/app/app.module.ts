@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     NavComponent,
     AcercadeComponent,
     ProyectosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

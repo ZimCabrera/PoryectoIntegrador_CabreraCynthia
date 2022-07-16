@@ -2,26 +2,23 @@ nav {
     display: flex;
     justify-content: space-between;
     text-align: center!important;
-    background: rgba(24, 24, 24, 0.888);
-    opacity: .9;
     border-radius: 0 0 15px 15px;
     padding: 20px 10%;
     width: 100%;
     font-family: 'Roboto Slab', serif;
 }
 
-img.pequeña {
-   height: 60px;
-   width: 95px; 
-}
-
-img.pequeña-min {
-    height: 50px;
-    width: 165px;
-}
 
 .navbar {
-    padding: .8rem;
+    padding: .10rem;
+}
+
+nav .logos img {
+    width:120px;
+}
+
+nav .logos .pequeña-min {
+    width:200px;
 }
 
 
@@ -37,7 +34,7 @@ nav li {
 
 
 span{
-    color:#ea473f;
+    color:lightcoral;
     font-size:16px;
 }
 
@@ -164,7 +161,7 @@ span{
 }
 
 .dropdown-menu a {
-    color:#ccc;
+    color:lightcoral;
     font-size: 30px;
     background:transparent;
     width: 60px;
