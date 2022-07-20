@@ -11,7 +11,7 @@ export class ProyectosComponent implements OnInit {
   constructor(
     private _renderer2: Renderer2,
  	  @Inject(DOCUMENT) private _document: Document
-  ) {}
+  ){}
 
   ngOnInit(): void {
     let body = this._document.body;

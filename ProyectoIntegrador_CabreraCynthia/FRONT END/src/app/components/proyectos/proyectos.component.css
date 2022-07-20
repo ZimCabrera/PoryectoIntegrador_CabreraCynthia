@@ -189,6 +189,11 @@
   max-height: 0;
   overflow:hidden;
   opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio-popup .pp-detalles.active {
+  opacity: 1;
 }
 
 .portfolio-popup .pp-detalles-inner {
@@ -218,6 +223,7 @@
 
 .portfolio-popup .pp-titulo p span {
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .portfolio-popup .pp-project-detalles h3 {
@@ -259,6 +265,10 @@
 
 .portfolio-popup .info ul li span {
   font-weight: 400;
+}
+
+.portfolio-popup .info ul li a {
+  color:lightcoral;
 }
 
 .portfolio-popup .info ul li:last-child {
