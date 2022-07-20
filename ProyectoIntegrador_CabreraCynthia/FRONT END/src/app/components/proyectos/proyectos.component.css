@@ -53,7 +53,7 @@
   font-weight: 400;
   color:antiquewhite;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 15px;
   transition:all 0.3s ease;
 }
 
@@ -71,6 +71,15 @@
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
+}
+
+#proyectos .portfolio-item.hide {
+  display: none;
+} 
+
+#proyectos .portfolio-item.show {
+  display:block;
+  animation: fadeInTop 0.5s ease;
 }
 
 #proyectos .portfolio-item-inner {
@@ -96,7 +105,7 @@
 
 #proyectos .portfolio-item-img .view-project {
   text-transform: capitalize; 
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: lightcoral;
   transition:all 0.3s ease;
@@ -118,7 +127,7 @@
 }
 
 #proyectos .portfolio-item-inner p {
-  font-size: 16px;
+  font-size: 15px;
   margin:10px 0 0;
   color:antiquewhite;
   text-transform: capitalize;
@@ -135,24 +144,99 @@
   height:100%;
   z-index:1000;
   overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .portfolio-popup .pp-detalles {
   max-width: 1350px;
-  width:85%;
+  width:calc(85% + 30px);
   margin:auto;
+  max-height: 0;
+  overflow:hidden;
+  opacity: 0;
 }
 
 .portfolio-popup .pp-detalles-inner {
   padding:30px 0;
 }
 
+.portfolio-popup .titulo {
+  padding: 0 15px;
+}
+
+.portfolio-popup .pp-titulo h3 {
+  font-size: 25px;
+  color:indianred;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.portfolio-popup .pp-titulo p {
+  font-size: 14px;
+  color:antiquewhite;
+  font-weight: 600;
+  margin: 0 0 15px;
+  border-bottom: 1px solid lightcoral;
+  padding-bottom: 8px;
+}
+
+.portfolio-popup .pp-titulo p span {
+  font-weight: 400;
+}
+
+.portfolio-popup .pp-project-detalles h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: indianred;
+  margin: 0 0 15px;
+  text-transform: capitalize;
+}
+
+.portfolio-popup .descripcion {
+  flex: 0 0 65%;
+  max-width: 65%;
+  padding: 0 15px;
+}
+
+.portfolio-popup .descripcion p {
+  font-size: 15px;
+  color: antiquewhite;
+  line-height: 26px;
+  margin: 0;
+}
+
+.portfolio-popup .info {
+  flex: 0 0 35%;
+  max-width: 35%;
+  padding: 0 15px;
+}
+
+.portfolio-popup .info ul li {
+  display:block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: antiquewhite;
+  font-size:15px;
+  word-spacing: 2px;
+  letter-spacing:1px;
+}
+
+.portfolio-popup .info ul li span {
+  font-weight: 400;
+}
+
+.portfolio-popup .info ul li:last-child {
+  margin-bottom: 0;
+}
+
 .portfolio-popup .separador {
-  height:2px;
+  height:1px;
   width:100%;
   display: block;
   margin-bottom: 20px;
-  background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100%);
+  background: lightcoral;
 }
 
 .portfolio-popup .pp-img {
@@ -187,7 +271,7 @@
   border-radius: 30px;
   background:rgb(24, 23, 23);
   box-shadow: 2px 2px rgb(0, 0, 0, .5);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color:lightcoral;
   top:15px;
@@ -231,7 +315,7 @@
   bottom:5px;
   word-spacing: 4px;
   letter-spacing: 2px;
-  font-size:16px;
+  font-size:15px;
   color:lightcoral;
 }
 

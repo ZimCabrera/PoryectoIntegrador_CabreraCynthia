@@ -13,3 +13,26 @@
     })
 
 })();
+
+                                  /* Popup */
+(() =>{
+    const filterContainer = document.querySelector(".portfolio-filter"), porfolioItemsContainer = document.querySelector(".portfolio-items"),
+    portfolioItems = document.querySelectorAll(".portfolio-item"),
+    popup = document.querySelector(".portfolio-popup"),
+    prevBtn = popup.querySelector(".pp-prev"),
+    nextBtn = popup.querySelector(".pp-next"),
+    cerrarBtn = popup.querySelector(".pp-cerrar"),
+    detallesProyectoContainer = popup.querySelector(".pp-detalles"),
+    detallesProyectoBtn = popup.querySelector(".pp-detalles-proyecto-btn");
+    let itemIndex, slideIndex, screenshots;
+
+    filterContainer.addEventListener("click", (event)=>{
+      if(event.target.classList.contains("filter-item") &&
+       !event.target.classList.contains("active")){
+       filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+       
+      }
+    })
+
+    
+})();
