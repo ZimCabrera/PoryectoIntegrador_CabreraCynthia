@@ -35,11 +35,12 @@
     filterContainer.addEventListener("click", (event) =>{
       if(event.target.classList.contains("filter-item") &&
        !event.target.classList.contains("active")){
-       filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
-       event.target.classList.add("active", "outer-shadow");
-       const target = event.target.getAttribute("data-target");
-       portfolioItems.forEach((item) =>{
-        if(target === item.getAttribute("data-category") || target === 'todo'){
+       
+        filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+        event.target.classList.add("active", "outer-shadow");
+        const target = event.target.getAttribute("data-target");
+        portfolioItems.forEach((item) =>{
+         if(target === item.getAttribute("data-category")){
           item.classList.remove("hide");
           item.classList.add("show");
         }
