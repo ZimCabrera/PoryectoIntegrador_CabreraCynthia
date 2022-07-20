@@ -83,4 +83,6 @@
       popup.querySelector("pp-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
     }
 
+    nextBtn.addEventListener
+
 })();
