@@ -86,11 +86,11 @@
   flex-wrap: wrap;
 }
 
-#proyectos .portfolio-item.hide {
+#proyectos .portfolio-item.hide{
   display: none;
 } 
 
-#proyectos .portfolio-item.show {
+#proyectos .portfolio-item.show{
   display:block;
   animation: fadeInTop 0.5s ease;
 }

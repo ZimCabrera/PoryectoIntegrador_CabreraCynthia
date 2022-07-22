@@ -15,7 +15,7 @@
 })();
 
  function bodyScrollingToggle() {
-  document.body.classList.toggle("stop-scrolling");
+  document.body.classList.toggle("hidden-scrolling");
  }
 
 
@@ -40,7 +40,7 @@
         event.target.classList.add("active", "outer-shadow");
         const target = event.target.getAttribute("data-target");
         portfolioItems.forEach((item) =>{
-         if(target === item.getAttribute("data-category")){
+         if(target === item.getAttribute("data-category") || target === 'todo'){
           item.classList.remove("hide");
           item.classList.add("show");
         }
@@ -54,8 +54,8 @@
 
     portfolioItemsContainer.addEventListener("click", (event) =>{
       if(event.target.closest(".portfolio-item-inner")){
-       const portfolioItems = event.target.closest(".portfolio-item-inner").parentElement;
-       itemIndex = Array.from(portfolioItems.parentElement.children).indexOf(portfolioItems);
+       const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
+       itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
        screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
        screenshots = screenshots.split(",");
        if(screenshots.length === 1){
@@ -71,22 +71,18 @@
        popupSlideshow();
        popupDetalles();
       }
-
     })
-
     cerrarBtn.addEventListener("click", () =>{
       popupToggle();
       if(detallesProyectoContainer.classList.contains("active")){
         popupDetallesToggle();
       }
     })
-
-    function popupToggle() {
+    function popupToggle(){
       popup.classList.toggle("open");
       bodyScrollingToggle();
     }
-
-    function popupSlideshow() {
+    function popupSlideshow(){
       const imgSrc = screenshots[slideIndex];
       const popupImg = popup.querySelector(".pp-img");
       popup.querySelector(".pp-loader").classList.add("active");
@@ -96,7 +92,6 @@
       }
       popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
     }
-
     nextBtn.addEventListener("click", () =>{
       if(slideIndex === screenshots.length-1){
         slideIndex = 0;
@@ -105,43 +100,33 @@
         slideIndex++;
       }
       popupSlideshow();
-      console.log("slideIndex:" + slideIndex);
     })
-
     prevBtn.addEventListener("click", () =>{
       if(slideIndex === 0){
-        slideIndex = screenshots.length-1;
+        slideIndex = screenshots.length-1
       }
       else{
         slideIndex--;
       }
       popupSlideshow();
-      console.log("slideIndex:" + slideIndex);
     })
-
-    function popupDetalles() {
+    function popupDetalles(){
       if(!portfolioItems[itemIndex].querySelector(".portfolio-item-detalles")){
         detallesProyectoBtn.style.display="none";
-        return /*  */
+        return;
       }
       detallesProyectoBtn.style.display="block";
-
       const detalles = portfolioItems[itemIndex].querySelector(".portfolio-item-detalles").innerHTML;
       popup.querySelector(".pp-project-detalles").innerHTML = detalles;
-      
       const titulo = portfolioItems[itemIndex].querySelector(".portfolio-item-titulo").innerHTML;
       popup.querySelector(".pp-titulo h3").innerHTML = titulo;
-
       const category = portfolioItems[itemIndex].getAttribute("data-category");
       popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
     }
-     
-     
     detallesProyectoBtn.addEventListener("click", () =>{
       popupDetallesToggle();
     })
-
-    function popupDetallesToggle() {
+    function popupDetallesToggle(){
       if(detallesProyectoContainer.classList.contains("active")){
         detallesProyectoBtn.querySelector("i").classList.remove("fa-circle-minus");
         detallesProyectoBtn.querySelector("i").classList.add("fa-circle-plus");
