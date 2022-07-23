@@ -1,5 +1,5 @@
 (() =>{
-    const sobreMi = document.querySelector(".sobremi"),
+    const sobreMi = document.querySelector("#sobremi"),
     tabsContainer = document.querySelector(".acerca-tabs");
 
      tabsContainer.addEventListener("click", (event) =>{
