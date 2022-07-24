@@ -1,5 +1,7 @@
 import { Renderer2, Inject, Component, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-acercade',
@@ -7,10 +9,12 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./acercade.component.css']
 })
 export class AcercadeComponent implements OnInit {
+  persona: persona = new persona("","","");
 
   constructor(
     private _renderer2: Renderer2,
- 	  @Inject(DOCUMENT) private _document: Document
+ 	  @Inject(DOCUMENT) private _document: Document,
+    public personaService: PersonaService
   ){}
 
   ngOnInit(): void {
@@ -19,6 +23,8 @@ export class AcercadeComponent implements OnInit {
     script.type = 'application/javascript';
     script.src = 'assets/js/main.js';
     this._renderer2.appendChild(body, script);
+
+    this.personaService.getPersona().subscribe(data => {this.persona = data});
   }
 
 }
