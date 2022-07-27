@@ -138,14 +138,18 @@ span{
 
 #login {
     margin: 15px;
-    padding: 3px 12px;
+    padding: 9px 10px;
     font-size: 30px;
     color:aqua;
     background: transparent;
-    border: none;
+    border: 1px solid aqua;
     border-radius: 50px;
     cursor: pointer;
-    transition:all 0.2s ease 0s;
+    transition:all 0.3s ease-in-out;
+}
+
+#login:hover {
+    transform: scale(1.2);
 }
 
 

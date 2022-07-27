@@ -1,22 +1,32 @@
-.header {
-  width: 100%;
+@keyframes typing {
+  from {width: 0}
 }
 
-.heading-content  {
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+
+#header {
+  width: 100%;
+  height: 100%;
+}
+
+#header .heading-content  {
     padding-top:180px;
     width: 100%;
-    height: 610px;
+    height: 700px;
     position: relative;
     z-index: 1;
 }
 
-.heading-content::after {
+#header .heading-content::after {
   content: '';
   background: url(../../../assets/background1.png);
   position: absolute;
   left: 0;
   top: 0;
-  height: 610px;
+  height: 700px;
   width: 100%;
   border-radius: 30px;
   background-color: #1e1d1d;
@@ -25,7 +35,7 @@
 }
 
 
-span {
+#header .heading-content h2 span {
     display: inline-block;
     white-space: nowrap;
     font-family: 'Roboto Slab', serif;
@@ -35,23 +45,17 @@ span {
     overflow: hidden;
 }
 
-@keyframes typing {
-    from {width: 0}
-}
 
-@keyframes blink {
-    50% { border-color: transparent }
-}
 
   
-.heading-content h2 {
+#header .heading-content h2 {
     font-size: 5.5rem;
     color:aqua;
     font-weight: bolder;
 }
   
 
-  .heading-content .cta {
+#header .heading-content .cta {
     display: inline-block;
     padding: 10px 20px;
     color:aqua;
@@ -66,19 +70,19 @@ span {
     transition-property: background-color, color;
   }
   
-.heading-content .cta:hover {
+  #header .heading-content .cta:hover {
   color:#08061f;
   background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
   }
   
-.heading-content h1 {
+  #header .heading-content h1 {
   font-size: 3.5em;
   color:antiquewhite;
   font-weight: 400;
 
 }
 
-.heading-content p {
+#header .heading-content p {
   font-size: 1em;
   font-weight: lighter;
   color: #fff;
@@ -87,15 +91,15 @@ span {
 }
 
 @media screen and (max-width: 764px) {
-  .heading-content h1 {
+  #header .heading-content h1 {
     font-size: 2.5em;
   }
 
-  .heading-content h2 {
+  #header .heading-content h2 {
     font-size: 2.5em;
  }
   
-  .heading-content p {
+ #header .heading-content p {
     font-size: 0.9em;  
   }
 }
