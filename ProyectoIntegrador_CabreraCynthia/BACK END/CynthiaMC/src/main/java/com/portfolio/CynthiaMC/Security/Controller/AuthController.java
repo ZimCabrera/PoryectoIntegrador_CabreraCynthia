@@ -50,9 +50,10 @@ public class AuthController {
             return new ResponseEntity(new Mensaje("Campos incorrectos"), HttpStatus.BAD_REQUEST);
         if(usuarioService.existsByNombreUsuario(nuevoUsuario.getNombreUsuario()))
             return new ResponseEntity(new Mensaje("Ya existe un usuario con ese nombre"), HttpStatus.BAD_REQUEST);
+        
         Usuario usuario = new Usuario(nuevoUsuario.getNombreUsuario(), passwordEncoder.encode(nuevoUsuario.getContraseña()));
         
-        Set<Rol> roles = HashSet<>();
+        Set<Rol> roles = new HashSet<>();
         roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
         
         if(nuevoUsuario.getRoles().contains("admin"))

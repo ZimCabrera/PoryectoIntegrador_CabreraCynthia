@@ -44,17 +44,17 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
 
     @Override
     protected AuthenticationManager authenticationManager() throws Exception {
-        return super.authenticationManager(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        return super.authenticationManager();
     }
 
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        return super.authenticationManagerBean(); 
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        super.configure(auth); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        auth.userDetailsService(userDetailsServiceImpl).passwordEncoder(passwordEncoder());
     }
     
     

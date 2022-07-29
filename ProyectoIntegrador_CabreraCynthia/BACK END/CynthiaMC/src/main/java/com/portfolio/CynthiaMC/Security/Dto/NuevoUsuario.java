@@ -26,11 +26,11 @@ public class NuevoUsuario {
         this.contraseña = contraseña;
     }
 
-    public <Rol> getRoles() {
+    public Set<String> getRoles() {
         return roles;
     }
 
-    public void setRoles(<any> roles) {
+    public void setRoles(Set<String> roles) {
         this.roles = roles;
     }
 }
