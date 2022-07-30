@@ -1,4 +1,4 @@
-<div class="container py-3 h-100">
+<form formGroup="form"  class="container py-3 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
            <div class="card text-white" style="border-radius: 1rem;">
@@ -9,12 +9,12 @@
                      <h5>Por favor ingresa tu contraseña.</h5>
   
                      <div class="form-outline form-white mb-4">
-                         <input type="user" id="typeEmailX" class="form-control form-control-lg" />
+                         <input type="user" formControlName="usuario" id="typeUser" class="form-control form-control-lg" />
                          <label class="form-label" for="typeof">Usuario</label>
                      </div>
   
                      <div class="form-outline form-white mb-4">
-                         <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                         <input type="password" formControlName="password" id="typePasswordX" class="form-control form-control-lg" />
                          <label class="form-label" for="typePasswordX">Contraseña</label>
                      </div>
   
@@ -25,4 +25,4 @@
             </div>
         </div>
     </div>
-</div>
+</form>
