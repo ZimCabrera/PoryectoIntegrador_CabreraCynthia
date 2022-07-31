@@ -20,8 +20,12 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
+    private String nombre;
+    @NotNull
     @Column(unique = true)
     private String nombreUsuario;
+    @NotNull
+    private String email;
     @NotNull
     private String contraseña;
     @ManyToMany(fetch = FetchType.EAGER)
@@ -31,10 +35,14 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nombreUsuario, String contraseña) {
+    public Usuario(String nombre, String nombreUsuario, String email, String contraseña) {
+        this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
+        this.email = email;
         this.contraseña = contraseña;
     }
+
+   
 
     public int getId() {
         return id;
@@ -44,12 +52,28 @@ public class Usuario {
         this.id = id;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombreUsuario() {
         return nombreUsuario;
     }
 
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getContraseña() {

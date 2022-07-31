@@ -11,34 +11,47 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 public class UsuarioPrincipal implements UserDetails{
+    private String nombre;
     private String nombreUsuario;
+    private String email;
     private String contraseña;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UsuarioPrincipal(String nombreUsuario, String contraseña, Collection<? extends GrantedAuthority> authorities) {
+    public UsuarioPrincipal(String nombre, String nombreUsuario, String email, String contraseña, Collection<? extends GrantedAuthority> authorities) {
+        this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
+        this.email = email;
         this.contraseña = contraseña;
         this.authorities = authorities;
     }
+
     
     public static UsuarioPrincipal build(Usuario usuario) {
         List<GrantedAuthority> authorities = usuario.getRoles().stream().map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors.toList());
-        return new UsuarioPrincipal(usuario.getNombreUsuario(), usuario.getContraseña(), authorities);
+        return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(), usuario.getContraseña(), authorities);
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-       return authorities;
+        return authorities;
     }
 
     @Override
     public String getPassword() {
-       return contraseña;
+        return contraseña;
     }
 
     @Override
     public String getUsername() {
         return nombreUsuario;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public String getEmail() {
+        return email;
     }
 
     @Override
@@ -58,7 +71,7 @@ public class UsuarioPrincipal implements UserDetails{
 
     @Override
     public boolean isEnabled() {
-        return true;
+       return true;
     }
-    
+
 }
