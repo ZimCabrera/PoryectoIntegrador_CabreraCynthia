@@ -89,6 +89,7 @@
         </div>   
         
         <div class="row">
+          <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
           <div class="educacion tab-content">
             <div class="row">
               <div class="timeline">
@@ -96,36 +97,12 @@
                   <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="fas fa-graduation-cap icon"></i>
-                      <span>Fecha</span>
-                      <h5>Institucion, Ciudad</h5>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-graduation-cap icon"></i>
-                      <span>Fecha</span>
-                      <h4>Titulo/Certificado</h4>
-                      <h5>Empresa, Ciudad</h5>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-graduation-cap icon"></i>
-                      <span>Fecha</span>
-                      <h4>Titulo/Certificado</h4>
-                      <h5>Empresa, Ciudad</h5>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-item-inner outer-shadow">
-                      <i class="fas fa-graduation-cap icon"></i>
-                      <span>Fecha</span>
-                      <h4>Titulo/Certificado</h4>
-                      <h5>Empresa, Ciudad</h5>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, accusamus, molestias veritatis quam delectus quod minima nemo sequi quas corporis exercitationem nisi reiciendis. Qui atque delectus earum fuga nesciunt. Eos.</p>
+                      <div *ngFor="let Educacion of educacion">
+                        <h4>{{Educacion.nombreE}}</h4>
+                        <p>{{Educacion.descripcionE}}</p>
+                        <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Educacion.id}}"><i class="fa-solid fa-pen-fancy"></i></button>
+                        <button *ngIf="isLogged" class="btn btn-danger" (click)="borrar(Educacion.id)"><i class="fa-solid fa-trash-can"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
