@@ -14,7 +14,7 @@ export class EditeducacionComponent implements OnInit {
   constructor(private educacionS: EducacionService, private activatedRouter :ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['idEdu'];
     this.educacionS.detail(id).subscribe(
       data =>{
         this.educacion = data;
@@ -26,7 +26,7 @@ export class EditeducacionComponent implements OnInit {
   }
 
   onUpdate(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['idEdu'];
     this.educacionS.update(id, this.educacion).subscribe(
        data =>{
         this.router.navigate(['']);

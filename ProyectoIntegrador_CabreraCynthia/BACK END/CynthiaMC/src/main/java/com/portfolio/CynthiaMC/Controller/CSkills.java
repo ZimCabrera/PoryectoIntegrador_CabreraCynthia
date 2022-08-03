@@ -33,11 +33,11 @@ public class CSkills {
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    @GetMapping("/detail/{id}")
-    public ResponseEntity<Skills> getById(@PathVariable("id") Long id){
-        if(!sSkills.existsById(id))
+    @GetMapping("/detail/{idSkill}")
+    public ResponseEntity<Skills> getById(@PathVariable("idSkill") Long idSkill){
+        if(!sSkills.existsById(idSkill))
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
-        Skills skills = sSkills.getOne(id).get();
+        Skills skills = sSkills.getOne(idSkill).get();
         return new ResponseEntity(skills, HttpStatus.OK);
     }
     

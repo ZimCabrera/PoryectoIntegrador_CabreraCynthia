@@ -12,13 +12,15 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvide } from './service/interceptor-service';
-import { NewExperienciaComponent } from './components/acercade/new-experiencia.component';
-import { EditExperienciaComponent } from './components/acercade/edit-experiencia.component';
-import { NeweducacionComponent } from './components/acercade/neweducacion.component';
-import { EditeducacionComponent } from './components/acercade/editeducacion.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditSkillComponent } from './components/skills/edit-skill.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     EducacionComponent,
     ExperienciaComponent,
     SkillsComponent,
+    NewSkillComponent,
+    EditSkillComponent,
   ],
   imports: [
     BrowserModule,

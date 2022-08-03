@@ -3,6 +3,7 @@ package com.portfolio.CynthiaMC.Controller;
 import com.portfolio.CynthiaMC.Entity.Persona;
 import com.portfolio.CynthiaMC.Interface.IPersonaService;
 import java.util.List;
+import static org.hibernate.criterion.Projections.id;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -46,12 +47,14 @@ public class PersonaController {
     public Persona editPersona(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre,
                                @RequestParam("apellido") String nuevoApellido,
-                               @RequestParam("img") String nuevoImg){
+                               @RequestParam("img") String nuevoImg,
+                               @RequestParam("descripcionE") String nuevoDescripcionE){
         Persona persona = ipersonaService.findPersona(id);
         
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
         persona.setImg(nuevoImg);
+        persona.setDescripcionE(nuevoDescripcionE);
         
         ipersonaService.savePersona(persona);
         return persona;

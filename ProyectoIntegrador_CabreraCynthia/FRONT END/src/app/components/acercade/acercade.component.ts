@@ -11,9 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./acercade.component.css']
 })
 export class AcercadeComponent implements OnInit {
-  persona: persona = new persona("","","");
-  
-  
+  persona: persona = new persona("","","","");
 
   constructor(
     private _renderer2: Renderer2,

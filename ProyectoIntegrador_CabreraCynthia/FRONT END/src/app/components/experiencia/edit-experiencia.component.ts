@@ -14,7 +14,7 @@ export class EditExperienciaComponent implements OnInit {
   constructor(private sExperiencia: SExperienciaService, private activatedRouter :ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['idExp'];
     this.sExperiencia.detail(id).subscribe(
       data =>{
         this.expLab = data;
@@ -26,7 +26,7 @@ export class EditExperienciaComponent implements OnInit {
   }
 
   onUpdate(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = this.activatedRouter.snapshot.params['idExp'];
     this.sExperiencia.update(id, this.expLab).subscribe(
        data =>{
         this.router.navigate(['']);
