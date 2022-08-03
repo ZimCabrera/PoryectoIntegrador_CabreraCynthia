@@ -14,8 +14,8 @@ export class EditSkillComponent implements OnInit {
   constructor(private sSkills: SSkillsService, private activatedRouter :ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['idSkill'];
-    this.sSkills.detail(id).subscribe(
+    const idSkill = this.activatedRouter.snapshot.params['idSkill'];
+    this.sSkills.detail(idSkill).subscribe(
       data =>{
         this.skillab = data;
       }, err =>{
@@ -26,8 +26,8 @@ export class EditSkillComponent implements OnInit {
   }
 
   onUpdate(): void {
-    const id = this.activatedRouter.snapshot.params['idSkill'];
-    this.sSkills.update(id, this.skillab).subscribe(
+    const idSkill = this.activatedRouter.snapshot.params['idSkill'];
+    this.sSkills.update(idSkill, this.skillab).subscribe(
        data =>{
         this.router.navigate(['']);
       }, err =>{

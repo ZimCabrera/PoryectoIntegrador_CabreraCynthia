@@ -11,7 +11,7 @@ import { SSkillsService } from 'src/app/service/s-skills.service';
 export class NewSkillComponent implements OnInit {
   nombreE : string = '';
   imgSkill : string = '';
-  porcentaje: string = '';
+  porcentaje: number;
 
   constructor(private sSkills: SSkillsService, private router: Router) { }
 
