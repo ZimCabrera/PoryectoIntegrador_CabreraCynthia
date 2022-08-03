@@ -13,24 +13,29 @@ import javax.persistence.Id;
 public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long idEdu;
     private String nombreE;
     private String descripcionE;
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Educacion(Long idEdu, String nombreE, String descripcionE) {
+        this.idEdu = idEdu;
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
 
-    public int getId() {
-        return id;
+    public Educacion(String nombreE, String descripcionE) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Long getIdEdu() {
+        return idEdu;
+    }
+
+    public void setIdEdu(Long idEdu) {
+        this.idEdu = idEdu;
     }
 
     public String getNombreE() {
@@ -48,6 +53,6 @@ public class Educacion {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
+
     
 }

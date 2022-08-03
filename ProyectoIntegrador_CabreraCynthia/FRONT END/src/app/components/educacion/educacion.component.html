@@ -1,0 +1,20 @@
+<div class="educacion">
+    <div class="row">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+      <div class="timeline">
+        <div class="row">
+          <div class="timeline-item">
+            <div class="timeline-item-inner outer-shadow">
+              <i class="fas fa-graduation-cap icon"></i>
+              <div *ngFor="let Educacion of educacion">
+                <h4>{{Educacion.nombreE}}</h4>
+                <p>{{Educacion.descripcionE}}</p>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Educacion.idEdu}}"><i class="fa-solid fa-pen-fancy"></i></button>
+                <button *ngIf="isLogged" class="btn btn-danger" (click)="borrar(Educacion.idEdu)"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

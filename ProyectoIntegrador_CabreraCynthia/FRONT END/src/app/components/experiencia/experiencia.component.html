@@ -1,0 +1,20 @@
+<div class="experiencia">
+    <div class="row">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
+      <div class="timeline">
+        <div class="row">
+          <div class="timeline-item">
+            <div class="timeline-item-inner outer-shadow">
+              <i class="fa-solid fa-certificate icon"></i>
+              <div *ngFor="let Experiencia of expe">
+                <h4>{{Experiencia.nombreE}}</h4>
+                <p>{{Experiencia.descripcionE}}</p>
+                <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.idExp}}"><i class="fa-solid fa-pen-fancy"></i></button>
+                <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.idExp)"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

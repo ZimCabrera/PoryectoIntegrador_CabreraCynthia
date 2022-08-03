@@ -34,11 +34,11 @@ public class CExperiencia {
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    @GetMapping("/detail/{id}")
-    public ResponseEntity<Experiencia> getById(@PathVariable("id") int id){
-        if(!sExperiencia.existsById(id))
+    @GetMapping("/detail/{idExp}")
+    public ResponseEntity<Experiencia> getById(@PathVariable("idExp") Long idExp){
+        if(!sExperiencia.existsById(idExp))
             return new ResponseEntity(new Mensaje("No existe"), HttpStatus.NOT_FOUND);
-        Experiencia experiencia = sExperiencia.getOne(id).get();
+        Experiencia experiencia = sExperiencia.getOne(idExp).get();
         return new ResponseEntity(experiencia, HttpStatus.OK);
     }
     
@@ -55,16 +55,16 @@ public class CExperiencia {
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
     }
     
-    @PutMapping("/update/{id}")
-    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoExperiencia dtoexpe){
-        if(!sExperiencia.existsById(id))
+    @PutMapping("/update/{idExp}")
+    public ResponseEntity<?> update(@PathVariable("idExp") Long idExp, @RequestBody dtoExperiencia dtoexpe){
+        if(!sExperiencia.existsById(idExp))
             return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.NOT_FOUND);
-        if(sExperiencia.existsByNombreE(dtoexpe.getNombreE()) && sExperiencia.getByNombreE(dtoexpe.getNombreE()).get().getId() != id)
+        if(sExperiencia.existsByNombreE(dtoexpe.getNombreE()) && sExperiencia.getByNombreE(dtoexpe.getNombreE()).get().getIdExp() != idExp)
             return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);
         if(StringUtils.isBlank(dtoexpe.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         
-        Experiencia experiencia = sExperiencia.getOne(id).get();
+        Experiencia experiencia = sExperiencia.getOne(idExp).get();
         experiencia.setNombreE(dtoexpe.getNombreE());
         experiencia.setDescripcionE((dtoexpe.getDescripcionE()));
         
@@ -72,11 +72,11 @@ public class CExperiencia {
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
     }
     
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> delete(@PathVariable("id") int id){
-        if(!sExperiencia.existsById(id))
+    @DeleteMapping("/delete/{idExp}")
+    public ResponseEntity<?> delete(@PathVariable("idExp") Long idExp){
+        if(!sExperiencia.existsById(idExp))
             return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.NOT_FOUND);
-        sExperiencia.delete(id);
+        sExperiencia.delete(idExp);
         return new ResponseEntity(new Mensaje("Experiencia eliminada"), HttpStatus.OK);
     }
 }

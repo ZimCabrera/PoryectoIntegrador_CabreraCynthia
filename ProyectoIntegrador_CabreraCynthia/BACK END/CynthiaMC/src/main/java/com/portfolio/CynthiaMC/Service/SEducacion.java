@@ -23,7 +23,7 @@ public class SEducacion {
         return rEducacion.findAll();
     }
     
-    public Optional<Educacion> getOne(int id){
+    public Optional<Educacion> getOne(Long id){
         return rEducacion.findById(id);
     }
     
@@ -35,11 +35,11 @@ public class SEducacion {
         rEducacion.save(educacion);
     }
     
-    public void delete(int id){
+    public void delete(Long id){
         rEducacion.deleteById(id);
     }
     
-    public boolean existsById(int id){
+    public boolean existsById(Long id){
         return rEducacion.existsById(id);
     }
     
