@@ -35,7 +35,7 @@ public class Persona implements Serializable{
     private String img;
     
     @Size(min = 1, max = 500, message = "no cumple con la longitud")
-    private String descripcionE;
+    private String descripcion;
     
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idEdu")
     private List<Educacion> educacionList;
@@ -47,12 +47,12 @@ public class Persona implements Serializable{
     public Persona() {
     }
 
-    public Persona(Long id, String nombre, String apellido, String img, String descripcionE) {
+    public Persona(Long id, String nombre, String apellido, String img, String descripcion) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.img = img;
-        this.descripcionE = descripcionE;
+        this.descripcion = descripcion;
     }
     
     

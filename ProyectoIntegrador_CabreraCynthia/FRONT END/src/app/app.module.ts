@@ -21,6 +21,8 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { SkillsComponent } from './components/skills/skills.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
+import { EditacercadeComponent } from './components/acercade/editacercade.component';
+
 
 
 @NgModule({
@@ -42,6 +44,7 @@ import { EditSkillComponent } from './components/skills/edit-skill.component';
     SkillsComponent,
     NewSkillComponent,
     EditSkillComponent,
+    EditacercadeComponent
   ],
   imports: [
     BrowserModule,

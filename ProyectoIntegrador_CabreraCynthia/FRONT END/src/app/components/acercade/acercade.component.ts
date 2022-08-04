@@ -31,6 +31,7 @@ export class AcercadeComponent implements OnInit {
 
     this.personaService.getPersona().subscribe(data => {this.persona = data});
 
+
   }
 
 }
