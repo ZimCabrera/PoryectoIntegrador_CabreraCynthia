@@ -1,14 +1,46 @@
-.educacion {
-    padding-bottom:40px;
-}
+#educacion {
+    width: 100%;
+  }
+  
+#educacion .edu {
+    padding: 80px;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position:top-center;
+    position: relative;
+    z-index: 1;
+  }
+  
+#educacion .edu::after {
+    content: '';
+    background: url(../../../assets/222934.jpg) no-repeat;
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #080808;
+    opacity: .9;
+    z-index: -1;
+  }
+  
+#educacion .edu h1 {
+    color:antiquewhite;
+    font-weight: 400;
+    text-align: center;
+  }
 
-.timeline {
+
+
+#educacion .timeline {
     flex: 0 0 100%;
     max-width: 100%;
     position:relative;
 }
 
-.timeline:before {
+#educacion .timeline:before {
     content: '';
     width: 1px;
     height:100%;
@@ -18,22 +50,22 @@
     position: absolute;
 }
 
-.timeline .timeline-item {
+#educacion .timeline .timeline-item {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0 15px;
 }
 
-.timeline .timeline-item:nth-child(odd) {
+#educacion .timeline .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 50px);
     text-align: right;
 }
 
-.timeline .timeline-item:nth-child(even) {
+#educacion .timeline .timeline-item:nth-child(even) {
     padding-left: calc(50% + 50px);
 }
 
-.timeline .timeline-item-inner {
+#educacion .timeline .timeline-item-inner {
     padding: 30px;
     border-radius: 5px;
     position: relative;
@@ -41,7 +73,7 @@
 
 
 
-.timeline .timeline-item-inner .icon {
+#educacion .timeline .timeline-item-inner .icon {
     height:40px;
     width: 40px;
     background-color:antiquewhite;
@@ -55,15 +87,15 @@
     top: 18px;
 }
 
-.timeline .timeline-item:nth-child(odd) .icon {
+#educacion .timeline .timeline-item:nth-child(odd) .icon {
     right:-70px;
 } 
 
-.timeline .timeline-item:nth-child(even) .icon {
+#educacion .timeline .timeline-item:nth-child(even) .icon {
     left:-70px;
 } 
 
-.timeline .timeline-item-inner span {
+#educacion .timeline .timeline-item-inner span {
     font-weight: 400;
     color: antiquewhite;
     display: block;
@@ -71,7 +103,7 @@
     text-transform: capitalize;
 }
 
-.timeline .timeline-item-inner h4 {
+#educacion .timeline .timeline-item-inner h4 {
     font-size: 16px;
     color:antiquewhite;
     font-weight: 600;
@@ -79,14 +111,14 @@
     text-transform: capitalize;
 }
 
-.timeline .timeline-item-inner h5 {
+#educacion .timeline .timeline-item-inner h5 {
     font-size: 14px;
     font-style: italic;
     color:antiquewhite;
     margin:0;
 }
 
-.timeline .timeline-item-inner p {
+#educacion .timeline .timeline-item-inner p {
     font-size: 14px;
     color:antiquewhite;
     line-height: 15px;
@@ -94,17 +126,14 @@
 }
 
 @media screen and (max-width: 890px) {
-    #sobremi .educacion {
-        padding-bottom:40px;
-    }
 
-    #sobremi .timeline {
+    #educacion .timeline {
        flex: 0 0 100%;
        max-width: 100%;
        position:relative;
     }
 
-    #sobremi .timeline:before {
+    #educacion .timeline:before {
       content: '';
       width: 1px;
       height:100%;
@@ -114,30 +143,30 @@
       position: absolute;
     }
 
-    #sobremi .timeline .timeline-item {
+    #educacion .timeline .timeline-item {
       flex: 0 0 100%;
       max-width: 100%;
       padding: 0 10px;
     }
 
-    #sobremi .timeline .timeline-item:nth-child(odd) {
+    #educacion .timeline .timeline-item:nth-child(odd) {
       padding-right:10px;
       text-align: left;
     }
 
-    #sobremi .timeline .timeline-item:nth-child(even) {
+    #educacion .timeline .timeline-item:nth-child(even) {
       padding:10px;
     }
 
-    #sobremi .timeline .timeline-item-inner {
+    #educacion .timeline .timeline-item-inner {
       padding: 10px;
       border-radius: 5px;
       position: relative;
     }
 
-    #sobremi .timeline .timeline-item-inner .icon {
-      height:30px;
-      width: 30px;
+    #educacion .timeline .timeline-item-inner .icon {
+      height:25px;
+      width: 25px;
       background-color:antiquewhite;
       border: 1px solid transparent;
       line-height:30px;
@@ -148,15 +177,15 @@
       top:30px;
     }
 
-    #sobremi .timeline .timeline-item:nth-child(odd) .icon {
-      right:35px;
+    #educacion .timeline .timeline-item:nth-child(odd) .icon {
+      right:23px;
     } 
 
-    #sobremi .timeline .timeline-item:nth-child(even) .icon {
-      left:-35px;
+    #educacion .timeline .timeline-item:nth-child(even) .icon {
+      left:-23px;
     }   
 
-    #sobremi .timeline .timeline-item-inner span {
+    #educacion .timeline .timeline-item-inner span {
         font-weight: 400;
         color: antiquewhite;
         display: block;
@@ -164,7 +193,7 @@
         text-transform: capitalize;
     }
     
-    #sobremi .timeline .timeline-item-inner h4 {
+    #educacion .timeline .timeline-item-inner h4 {
         font-size: 14px;
         color:antiquewhite;
         font-weight: 600;
@@ -172,14 +201,14 @@
         text-transform: capitalize;
     }
     
-    #sobremi .timeline .timeline-item-inner h5 {
+    #educacion .timeline .timeline-item-inner h5 {
         font-size: 12px;
         font-style: italic;
         color:antiquewhite;
         margin:0 0 10px 15px;
     }
     
-    #sobremi .timeline .timeline-item-inner p {
+    #educacion .timeline .timeline-item-inner p {
         font-size: 12px;
         line-height: 15px;
         margin:0 0 10px 15px;

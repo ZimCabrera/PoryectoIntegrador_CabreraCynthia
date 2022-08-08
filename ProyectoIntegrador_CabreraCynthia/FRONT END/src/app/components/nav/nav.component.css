@@ -23,7 +23,7 @@ nav .logos .pequeña-min {
 
 
 .nav-item {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
@@ -136,26 +136,8 @@ span{
 }
 
 
-#login {
-    margin: 15px;
-    padding: 9px 10px;
-    font-size: 30px;
-    color:aqua;
-    background: transparent;
-    border: 1px solid aqua;
-    border-radius: 50px;
-    cursor: pointer;
-    transition:all 0.3s ease-in-out;
-}
-
-#login:hover {
-    transform: scale(1.2);
-}
-
-
-
 .dropdown {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 
@@ -179,3 +161,36 @@ span{
     transform: scale(1.2);
 }
 
+#login {
+    margin: 15px;
+    padding: 0 10px;
+    font-size: 30px;
+    color:aqua;
+    background: transparent;
+    border: 1px solid aqua;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+
+
+#login:hover {
+    transform: scale(1.2);
+}
+
+#onLogOut {
+    margin: 15px;
+    padding: 0 10px;
+    font-size: 30px;
+    color:#d3531a;
+    background: transparent;
+    border: 1px solid #d3531a;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+#onLogOut:hover {
+    transform: scale(1.2);
+}

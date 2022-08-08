@@ -1,17 +1,18 @@
-<div class="experiencia">
-    <div class="row">
-      <h2>Experiencia</h2>
-      <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
+<div id="experiencia">
+  <div class="container-fluid mt-2 mb-2">
+    <div class="expe">
+      <h1 class="display-3 font-weight-bold py-2">Experiencias</h1>
       <div class="timeline">
         <div class="row">
           <div class="timeline-item">
             <div class="timeline-item-inner outer-shadow">
               <i class="fa-solid fa-certificate icon"></i>
               <div *ngFor="let Experiencia of expe">
-                <h4>{{Experiencia.nombreE}}</h4>
-                <p>{{Experiencia.descripcionE}}</p>
+                <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
                 <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.idExp}}"><i class="fa-solid fa-pen-fancy"></i></button>
                 <button *ngIf="isLogged" class="btn btn-danger" (click)="delete(Experiencia.idExp)"><i class="fa-solid fa-trash-can"></i></button>
+                <h4>{{Experiencia.nombreE}}</h4>
+                <p>{{Experiencia.descripcionE}}</p>
               </div>
             </div>
           </div>
@@ -19,3 +20,4 @@
       </div>
     </div>
   </div>
+</div>

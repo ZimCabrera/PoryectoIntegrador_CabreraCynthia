@@ -1,5 +1,5 @@
 export class Educacion {
-    idEdu?: number;
+    idEdu: number;
     nombreE : string;
     descripcionE : string;
 

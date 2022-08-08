@@ -12,3 +12,4 @@ export class EditacercadeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+}

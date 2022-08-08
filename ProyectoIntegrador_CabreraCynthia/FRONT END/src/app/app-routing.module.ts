@@ -10,8 +10,7 @@ import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: 'login', pathMatch: 'full'},
-  {path:'home', component:HomeComponent},
+  {path:'', component:HomeComponent},
   {path:'login', component:LoginComponent},
   {path:'nuevaexp', component:NewExperienciaComponent},
   {path:'editexp/:idExp', component:EditExperienciaComponent},

@@ -1,13 +1,14 @@
-<div class="skills">
-  <div class="row">
-    <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
-    <div class="row">
-      <div class="skill-item">
+<div id="skills">
+  <div class="container-fluid mt-2 mb-2">
+    <div class="skill">
+      <h1 class="display-3 font-weight-bold py-2">Skills</h1><div class="skills">
+      <div class="row">
+        <div class="skill-item">
         <div *ngFor="let Skills of skill">
-            {{Skills.imgSkill}}
-            <p>{{Skills.nombreE}} {{Skills.porcentaje}}%</p>
-        </div>
-        <div class="progress inner-shadow">
+          <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+          {{Skills.imgSkill}}
+          <p>{{Skills.nombreE}} {{Skills.porcentaje}}%</p>
+          <div class="progress inner-shadow">
           <div class="progress-bar" value="Skills.porcentaje" max="100"></div>
         </div>
       </div>
