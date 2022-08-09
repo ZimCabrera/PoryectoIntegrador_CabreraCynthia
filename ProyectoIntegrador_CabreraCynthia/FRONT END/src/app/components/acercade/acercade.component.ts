@@ -20,7 +20,7 @@ export class AcercadeComponent implements OnInit {
     private tokenService: TokenService 
   ){}
 
-  isLogged = false;
+  isLoged = false;
 
   ngOnInit(): void {
     let body = this._document.body;

@@ -8,15 +8,15 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  isLogged = false;
+  isLoged = false;
 
   constructor(private router:Router, private tokenService:TokenService) { }
 
   ngOnInit(): void {
     if(this.tokenService.getToken()){
-      this.isLogged = true;
+      this.isLoged = true;
     }else{
-      this.isLogged = false;
+      this.isLoged = false;
     }
   }
 

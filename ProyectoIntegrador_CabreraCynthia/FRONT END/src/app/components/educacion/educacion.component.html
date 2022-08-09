@@ -8,9 +8,9 @@
             <div class="timeline-item-inner outer-shadow">
                <i class="fas fa-graduation-cap icon"></i>
                <div *ngFor="let Educacion of educacion">
-                  <button *ngIf="isLogged" type="button" class="btn btn-dark" routerLink="/nuevaedu">agregar</button>
-                  <button *ngIf="isLogged" type="button" class="btn btn-dark" routerLink="/editedu/Educacion.idEdu"><i class="fa-solid fa-pen-fancy"></i></button>
-                  <button *ngIf="isLogged" type="button" class="btn btn-danger" (click)="borrar(Educacion.idEdu)"><i class="fa-solid fa-trash-can"></i></button>
+                  <button *ngIf="isLoged" type="button" class="btn btn-dark" routerLink="/nuevaedu">agregar</button>
+                  <button *ngIf="isLoged" type="button" class="btn btn-dark" routerLink="/editedu/Educacion.idEdu"><i class="fa-solid fa-pen-fancy"></i></button>
+                  <button *ngIf="isLoged" type="button" class="btn btn-danger" (click)="borrar(Educacion.idEdu)"><i class="fa-solid fa-trash-can"></i></button>
                   <h4>{{Educacion.nombreE}}</h4>
                   <p>{{Educacion.descripcionE}}</p>
                 </div>

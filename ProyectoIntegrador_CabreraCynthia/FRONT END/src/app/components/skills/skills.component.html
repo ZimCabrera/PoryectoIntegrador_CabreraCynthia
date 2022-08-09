@@ -5,7 +5,7 @@
       <div class="row">
         <div class="skill-item">
         <div *ngFor="let Skills of skill">
-          <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+          <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLoged">Nueva Skill</button>
           {{Skills.imgSkill}}
           <p>{{Skills.nombreE}} {{Skills.porcentaje}}%</p>
           <div class="progress inner-shadow">
