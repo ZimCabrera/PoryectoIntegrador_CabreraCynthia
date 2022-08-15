@@ -2,6 +2,6 @@ export class NuevoUsuario {
     nombre: string;
     nombreUsuario:string;
     email:string;
-    contraseña:string;
+    password:string;
     authorities:string[];
 }

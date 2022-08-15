@@ -38,7 +38,7 @@
         </li>
       </ul>
     </div>
-      <a href="/login" id="login" type="button"><i class="fa-brands fa-github-alt"></i></a>
-      <a href="/onLogOut" id="onLogOut" type="button" *ngIf="isLoged"><i class="fa-brands fa-github-alt"></i></a>
+      <button id="login" type="button" (click)="login()" *ngIf="!isLoged"><i class="fa-brands fa-github-alt"></i></button>
+      <button id="onLogOut" type="button" (click)="onLogOut()" *ngIf="isLoged"><i class="fa-brands fa-github-alt"></i></button>
   </div>
 </nav>
