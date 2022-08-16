@@ -12,7 +12,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AcercadeComponent implements OnInit {
   persona: persona = new persona("","","","");
-
+  
   constructor(
     private _renderer2: Renderer2,
  	  @Inject(DOCUMENT) private _document: Document,

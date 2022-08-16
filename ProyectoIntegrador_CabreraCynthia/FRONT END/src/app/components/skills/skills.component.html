@@ -1,15 +1,21 @@
 <div id="skills">
   <div class="container-fluid mt-2 mb-2">
     <div class="skill">
+      <div class="text-end">
+        <button id="nueva" type="button" class="btn" routerLink="/nuevaskill/" *ngIf="isLoged">Agregar <i class="fa-solid fa-square-plus"></i></button>
+      </div>
       <h1 class="display-3 font-weight-bold py-2">Skills</h1><div class="skills">
       <div class="row">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaskill/" *ngIf="isLoged">Nueva Skill</button>
         <div class="skill-item">
         <div *ngFor="let Skills of skill">
-          {{Skills.imgSkill}}
+          <i class="{{Skills.imgSkill}}"></i>
           <p>{{Skills.nombreE}} {{Skills.porcentaje}}%</p>
-          <div class="progress inner-shadow">
-            <div class="progress-bar" value="Skills.porcentaje" max="100"></div>
+          <div class="progress">
+              <progress class="progress-bar bg-gradient" value="{{Skills.porcentaje}}" max="100"></progress>
+          </div>
+          <div id="botones" *ngIf="isLoged">
+            <button type="button" class="btn btn-light" routerLink="/editskill/{{Skills.idSkill}}"><i class="fa-solid fa-pen-fancy"></i></button>&nbsp;
+            <button type="button" class="btn btn-danger" (click)="delete(Skills.idSkill)"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
       </div>

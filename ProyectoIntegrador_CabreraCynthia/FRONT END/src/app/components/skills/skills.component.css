@@ -1,9 +1,10 @@
 #skills {
     width: 100%;
   }
+
   
 #skills .skill {
-    padding: 80px;
+    padding: 40px;
     width: 100%;
     height: 100%;
     background-size:cover;
@@ -25,23 +26,37 @@
     opacity: .9;
     z-index: -1;
   }
+
+#nueva {
+    font-size:15px;
+    background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
+    border: 0px;
+    transition:all 0.3s ease-in-out;
+}
+  
+#nueva:hover {
+  transform: scale(1.2);
+}
   
 #skills .skill h1 {
     color:antiquewhite;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 40px;
   }
 
-#skills .skill {
-    padding-bottom:40px;
-}
 
 
 #skills .skill .skill-item {
-    flex: 0 0 50%;
-    max-width:50%;
-    padding: 0 15px;
-    margin-bottom: 40px;
+    flex: 0 0 70%;
+    max-width:70%;
+    padding: 0 0 0 15%;
+    margin-bottom: 30px;
+}
+
+#skills .skill .img i {
+    font-size: 20px;
+    color:antiquewhite;
 }
 
 #skills .skill .skill-item p {
@@ -59,12 +74,16 @@
 
 #skills .skill .skill-item .progress-bar {
     background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
-    height: 6px;
+    height: 7px;
     left:7px;
     top:7px;
     position:absolute;
     border-radius:10px;
 }
+
+#botones {
+    padding: 10px 0px 10px 5px;
+  }
 
 @media screen and (max-width: 890px) {
     #skills .skill .skill-item {
@@ -73,4 +92,8 @@
         padding: 0 15px;
         margin-bottom: 40px;
     }
+
+    #botones {
+        padding: 10px 0px 10px 15px;
+      }
 }

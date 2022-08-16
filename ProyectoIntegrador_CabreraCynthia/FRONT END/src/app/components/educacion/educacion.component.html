@@ -1,20 +1,21 @@
 <div id="educacion">
   <div class="container-fluid mt-2 mb-2">
     <div class="edu">
-      <h1 class="display-3 font-weight-bold py-2">Educación</h1>
+      <div class="text-end">
+        <button id="nueva" type="button" class="btn" routerLink="/nuevaedu/" *ngIf="isLoged">Agregar <i class="fa-solid fa-square-plus"></i></button>
+      </div>
+      <h1 class="display-3 font-weight-bold py-2"><i class="fas fa-graduation-cap icon"></i> Educación</h1>
       <div class="timeline">
         <div class="row">
-          <button type="button" class="btn btn-dark" routerLink="/nuevaedu/" *ngIf="isLoged"><i class="fa-solid fa-square-plus"></i></button>
           <div class="timeline-item">
-            <div class="timeline-item-inner outer-shadow">
-               <i class="fas fa-graduation-cap icon"></i>
+            <div class="timeline-item-inner">
                <div *ngFor="let Educacion of educacion">
-                  <div *ngIf="isLoged">
-                    <button type="button" class="btn btn-dark" routerLink="/editedu/{{Educacion.idEdu}}"><i class="fa-solid fa-pen-fancy"></i></button>
-                    <button type="button" class="btn btn-danger" (click)="borrar(Educacion.idEdu)"><i class="fa-solid fa-trash-can"></i></button>
-                  </div>
                   <h4>{{Educacion.nombreE}}</h4>
                   <p>{{Educacion.descripcionE}}</p>
+                  <div id="botones" *ngIf="isLoged">
+                    <button type="button" class="btn btn-light text-end" routerLink="/editedu/{{Educacion.idEdu}}"><i class="fa-solid fa-pen-fancy"></i></button>&nbsp;
+                    <button type="button" class="btn btn-danger text-end" (click)="borrar(Educacion.idEdu)"><i class="fa-solid fa-trash-can"></i></button>
+                  </div>
                 </div>
             </div>
           </div>
