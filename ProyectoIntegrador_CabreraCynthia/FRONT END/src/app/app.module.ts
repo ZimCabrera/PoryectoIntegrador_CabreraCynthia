@@ -21,7 +21,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { SkillsComponent } from './components/skills/skills.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
@@ -49,7 +49,8 @@ import { EditSkillComponent } from './components/skills/edit-skill.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }

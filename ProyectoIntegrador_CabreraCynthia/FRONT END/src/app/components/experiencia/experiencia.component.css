@@ -66,11 +66,14 @@ transform: scale(1.2);
     padding:10px 0 10px 20%;
 }
 
-
+#experiencia .timeline .timeline-item-inner {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 #experiencia .timeline .timeline-item-inner h4 {
     font-size: 16px;
-    color:antiquewhite;
+    color:lightcoral;
     font-weight: 600;
     margin: 0 0 5px;
     text-transform: capitalize;
@@ -82,10 +85,12 @@ transform: scale(1.2);
     color:antiquewhite;
     line-height: 15px;
     margin: 15px 0 0;
+    padding-bottom: 40px;
 }
 
 #botones {
   padding: 10px 0px 10px 5px;
+  
 }
 
 
@@ -106,7 +111,7 @@ transform: scale(1.2);
     
     #experiencia .timeline .timeline-item-inner h4 {
         font-size: 14px;
-        color:antiquewhite;
+        color:lightcoral;
         font-weight: 600;
         margin: 0 0 10px 15px;
         text-transform: capitalize;

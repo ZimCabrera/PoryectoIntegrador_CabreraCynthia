@@ -6,6 +6,12 @@
     opacity: .9;
 }
 
+.fa-github-alt {
+    width: 70px;
+    height:70px;
+    color:aqua;
+}
+
 .card h4 {
     color:#ea473f;
     font-size: 40px;

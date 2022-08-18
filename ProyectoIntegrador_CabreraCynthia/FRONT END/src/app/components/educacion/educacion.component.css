@@ -14,7 +14,6 @@
   
 #educacion .edu::after {
     content: '';
-    background: url(../../../assets/222934.jpg) no-repeat;
     position:absolute;
     left: 0;
     top: 0;
@@ -22,7 +21,7 @@
     width: 100%;
     border-radius: 30px;
     background-color: #080808;
-    opacity: .9;
+    opacity: .8;
     z-index: -1;
 }
   
@@ -66,10 +65,14 @@
     padding: 10px 0 10px 20%;
 }
 
+#educacion .timeline .timeline-item-inner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
 #educacion .timeline .timeline-item-inner h4 {
     font-size: 16px;
-    color:antiquewhite;
+    color:lightcoral;
     font-weight: 600;
     margin: 0 0 5px;
     text-transform: capitalize;
@@ -81,6 +84,7 @@
     color:antiquewhite;
     line-height: 15px;
     margin: 15px 0 0;
+    padding-bottom: 40px;
 }
 
 #botones {
@@ -104,7 +108,7 @@
     
     #educacion .timeline .timeline-item-inner h4 {
         font-size: 14px;
-        color:antiquewhite;
+        color:lightcoral;
         font-weight: 600;
         margin: 0 0 10px 15px;
         text-transform: capitalize;

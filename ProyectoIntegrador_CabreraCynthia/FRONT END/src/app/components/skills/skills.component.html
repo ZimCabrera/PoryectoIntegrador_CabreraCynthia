@@ -4,21 +4,51 @@
       <div class="text-end">
         <button id="nueva" type="button" class="btn" routerLink="/nuevaskill/" *ngIf="isLoged">Agregar <i class="fa-solid fa-square-plus"></i></button>
       </div>
-      <h1 class="display-3 font-weight-bold py-2">Skills</h1><div class="skills">
-      <div class="row">
-        <div class="skill-item">
+
+      <h1 class="display-3 font-weight-bold py-2"><i class="fa-solid fa-laptop-code" color="#ea473f"></i> Skills</h1>
+      <div class="skill-item">
         <div *ngFor="let Skills of skill">
-          <i class="{{Skills.imgSkill}}"></i>
-          <p>{{Skills.nombreE}} {{Skills.porcentaje}}%</p>
-          <div class="progress">
-              <progress class="progress-bar bg-gradient" value="{{Skills.porcentaje}}" max="100"></progress>
-          </div>
-          <div id="botones" *ngIf="isLoged">
-            <button type="button" class="btn btn-light" routerLink="/editskill/{{Skills.idSkill}}"><i class="fa-solid fa-pen-fancy"></i></button>&nbsp;
-            <button type="button" class="btn btn-danger" (click)="delete(Skills.idSkill)"><i class="fa-solid fa-trash-can"></i></button>
-          </div>
+          <ul>
+            <li class="text-center">
+              <h4>{{Skills.nombreE}} {{Skills.porcentaje}}%</h4>
+              <circle-progress
+                [percent]="Skills.porcentaje"
+                [maxPercent]="100"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#f54d4d'"
+                [backgroundGradientStopColor]="'#ec4b4b'"
+                [backgroundOpacity]="0"
+                [backgroundStroke]="'#f05656'"
+                [backgroundPadding]="0"
+                [radius]="100"
+                [space]="8"
+                [toFixed]="0"
+                [imageSrc]="Skills.imgSkill"
+                [imageHeight]="70"
+                [imageWidth]="70"
+                [showImage]="true"
+                [unitsFontSize]="'13px'"
+                [unitsFontWeight]="'600'"
+                [unitsColor]="'#ece4e4'"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="10"
+                [outerStrokeColor]="'#ee3a3a'"
+                [outerStrokeGradientStopColor]="'#6cf4dd'"
+                [innerStrokeColor]="'#b2e1f5'"
+                [innerStrokeWidth]="3"
+                [animationDuration]="800"
+                [showBackground]="false"
+                ></circle-progress>
+            
+              <div id="botones" *ngIf="isLoged">
+                <button type="button" class="btn btn-light" routerLink="/editskill/{{Skills.idSkill}}"><i class="fa-solid fa-pen-fancy"></i></button>&nbsp;
+                <button type="button" class="btn btn-danger" (click)="delete(Skills.idSkill)"><i class="fa-solid fa-trash-can"></i></button>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div> 
 </div> 
+

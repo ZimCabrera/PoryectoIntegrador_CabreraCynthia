@@ -1,7 +1,7 @@
 <div id="sobremi">
   <div class="container-fluid mt-2 mb-2">
     <div class="post-heading">
-      <h1 class="display-4 font-weight-bold py-2">Sobre Mí</h1>
+      <h1 class="display-4 font-weight-bold py-2"><i class="fa-solid fa-user-astronaut" color="#ea473f"></i> Sobre Mí</h1>
       <div class="row">
         <div class="col-lg-5 col-md-6 col-12">
           <div *ngIf="isLoged">
@@ -13,10 +13,7 @@
         <div id="info-perfil" class="col-lg-7 col-md-6 col-12 py-3">
           <h2><span class="typing">Developer Full Stack jr.</span></h2>
           <hr>
-          <div *ngIf="isLoged">
-            <button id="click" type="button" class="btn btn-ligth"><i class="fa-solid fa-pen-fancy"></i></button>
-          </div>
-          <p class="text-start py-2">{{persona.descripcion}}</p>
+          <p class="text-start py-2">"Hola! Me llamo Cynthia pero todos me dicen Zim. Tengo 33 años y tengo estudios universitarios en Psicopedagogía. Me aventure a conocer y aprender Programación como autodidacta y realizando el curso de Argentina Programa. Me di cuenta lo que me fascina el código y todo lo que tenga que ver con el. Si quieren saber mas de mí, pueden terminar de ver esta pagina que realice con mucha paciencia, perseverancia, aprendiendo en el camino y también tienen mis redes sociales. Adiós."</p>
           <br>
           <div class="social-links buttons">
             <a id="facebook" href="https://www.facebook.com/zim.cabrera"><i class="fa-brands fa-facebook"></i></a>

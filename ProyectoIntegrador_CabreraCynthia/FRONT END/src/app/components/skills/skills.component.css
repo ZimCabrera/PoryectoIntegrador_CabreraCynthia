@@ -15,7 +15,6 @@
   
 #skills .skill::after {
     content: '';
-    background: url(../../../assets/222934.jpg) no-repeat;
     position:absolute;
     left: 0;
     top: 0;
@@ -23,7 +22,7 @@
     width: 100%;
     border-radius: 30px;
     background-color: #080808;
-    opacity: .9;
+    opacity: .8;
     z-index: -1;
   }
 
@@ -45,53 +44,29 @@
     margin-bottom: 40px;
   }
 
+  #skills .skill h4 {
+    color:lightcoral;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 
+  .skill-item {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 20px 0 20px;
+  }
 
-#skills .skill .skill-item {
-    flex: 0 0 70%;
-    max-width:70%;
-    padding: 0 0 0 15%;
-    margin-bottom: 30px;
-}
-
-#skills .skill .img i {
-    font-size: 20px;
-    color:antiquewhite;
-}
-
-#skills .skill .skill-item p {
-    font-size: 16px;
-    color: antiquewhite;
-    text-transform: capitalize;
-    margin: 0 0 10px;
-}
-
-#skills .skill .skill-item .progress {
-    height: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-
-#skills .skill .skill-item .progress-bar {
-    background:linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% );
-    height: 7px;
-    left:7px;
-    top:7px;
-    position:absolute;
-    border-radius:10px;
-}
 
 #botones {
-    padding: 10px 0px 10px 5px;
+    padding: 20px 0px 20px 5px;
   }
 
 @media screen and (max-width: 890px) {
-    #skills .skill .skill-item {
-        flex:100%;
-        max-width:100%;
-        padding: 0 15px;
-        margin-bottom: 40px;
-    }
+    
 
     #botones {
         padding: 10px 0px 10px 15px;
