@@ -148,6 +148,11 @@
 
 
 @media screen and (max-width: 890px) {
+  
+  #proyectos .project {
+    padding: 30px;
+  }
+
   #proyectos .portfolio-item-img img {
     width: 250px;
   }

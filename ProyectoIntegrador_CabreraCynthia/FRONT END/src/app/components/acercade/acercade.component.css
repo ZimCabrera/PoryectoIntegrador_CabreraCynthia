@@ -114,14 +114,19 @@ hr {
 
 @media screen and (max-width: 890px) {
     
+    .post-heading {
+        padding: 30px;
+      }
+    
+    
     #sobremi .post-heading h1 {
         font-weight: 500;
-        font-size:3rem;
+        font-size:2rem;
     }
     
     #sobremi .post-heading h2 {
-        font-size:1.5rem;
-        word-spacing: 2px;
+        font-size:1rem;
+        word-spacing: 1px;
         letter-spacing: 2px;
     }
     
