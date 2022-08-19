@@ -67,8 +67,15 @@
 
 @media screen and (max-width: 890px) {
     
+  #skills .skill h1 {
+    font-size: 2rem;
+  }
 
-    #botones {
-        padding: 10px 0px 10px 15px;
-      }
+  #botones {
+    padding: 10px 0px 10px 15px;
+  }
+
+  #nueva {
+    font-size:11px;
+  }
 }

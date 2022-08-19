@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     text-align: center!important;
     border-radius: 0 0 15px 15px;
-    padding: 20px 10%;
+    padding: 20px 5%;
     width: 100%;
     font-family: 'Roboto Slab', serif;
 }
@@ -193,4 +193,24 @@ span{
 
 #onLogOut:hover {
     transform: scale(1.2);
+}
+@media screen and (max-width : 400px) {
+    .navbar {
+        padding-left: .8rem;
+    }
+
+    
+    #login {
+        margin: 8px;
+        padding: 0 5px;
+        font-size: 25px;
+    }
+    
+
+
+    #onLogOut {
+        margin: 8px;
+        padding: 0 5px;
+        font-size: 25px;
+    }
 }

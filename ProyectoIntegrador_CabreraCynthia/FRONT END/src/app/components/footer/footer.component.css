@@ -1,6 +1,6 @@
 .footer-bar {
     width:100%;
-    min-height: 15vh;
+    max-height: 12vh;
     border-radius: 15px 15px 0 0;
 }
 

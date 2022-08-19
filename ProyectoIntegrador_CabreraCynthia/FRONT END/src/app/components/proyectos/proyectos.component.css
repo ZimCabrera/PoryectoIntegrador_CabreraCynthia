@@ -152,6 +152,9 @@
   #proyectos .project {
     padding: 30px;
   }
+  #proyectos .project h1 {
+    font-size:2rem;
+  }
 
   #proyectos .portfolio-item-img img {
     width: 250px;

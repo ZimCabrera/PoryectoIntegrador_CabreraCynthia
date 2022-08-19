@@ -97,36 +97,44 @@ transform: scale(1.2);
 
 @media screen and (max-width: 890px) {
   
+  #experiencia .edu h1 {
+    font-size: 2rem;
+  }
 
-    #experiencia .timeline:before {
-      left:0;
-    }
+  #experiencia .timeline:before {
+    left:0;
+  }
 
-    #experiencia .timeline .timeline-item {
-      flex: 0 0 100%;
-      max-width: 100%;
-      padding: 0 10px;
-    }
-
-    
-    #experiencia .timeline .timeline-item-inner h4 {
-        font-size: 14px;
-        color:lightcoral;
-        font-weight: 600;
-        margin: 0 0 10px 15px;
-        text-transform: capitalize;
-    }
-    
+  #experiencia .timeline .timeline-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
     
-    #experiencia .timeline .timeline-item-inner p {
-        font-size: 12px;
-        line-height: 15px;
-        margin:0 0 10px 15px;
-    }
+  #experiencia .timeline .timeline-item-inner h4 {
+    font-size: 14px;
+    color:lightcoral;
+    font-weight: 600;
+    margin: 0 0 10px 15px;
+    text-transform: capitalize;
+  }
+    
 
-    #botones {
-      padding: 10px 0px 10px 15px;
-    }
+    
+  #experiencia .timeline .timeline-item-inner p {
+    font-size: 12px;
+    line-height: 15px;
+    margin:0 0 10px 15px;
+  }
+
+  #botones {
+    padding: 10px 0px 10px 15px;
+  }
+
+  #nueva {
+    font-size:11px;
+  }
+
 }
     

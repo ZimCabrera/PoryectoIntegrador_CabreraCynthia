@@ -94,6 +94,10 @@
 
 @media screen and (max-width: 890px) {
 
+  #educacion .edu h1 {
+    font-size: 2rem;
+  }
+
   #educacion .timeline:before {
     left:0;
   }
@@ -106,23 +110,27 @@
     }
 
     
-    #educacion .timeline .timeline-item-inner h4 {
-        font-size: 14px;
-        color:lightcoral;
-        font-weight: 600;
-        margin: 0 0 10px 15px;
-        text-transform: capitalize;
-    }
+  #educacion .timeline .timeline-item-inner h4 {
+    font-size: 14px;
+    color:lightcoral;
+    font-weight: 600;
+    margin: 0 0 10px 15px;
+    text-transform: capitalize;
+  }
   
     
-    #educacion .timeline .timeline-item-inner p {
-        font-size: 12px;
-        line-height: 15px;
-        margin:0 0 10px 15px;
-    }
+  #educacion .timeline .timeline-item-inner p {
+    font-size: 12px;
+    line-height: 15px;
+    margin:0 0 10px 15px;
+  }
 
-    #botones {
-        padding: 10px 0px 10px 15px;
-      }
+  #botones {
+    padding: 10px 0px 10px 15px;
+  }
+  
+  #nueva {
+    font-size:11px;
+  }
       
 }

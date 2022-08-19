@@ -61,7 +61,7 @@ hr {
 #sobremi .post-heading h2 {
     color:aqua;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2rem;
     font-weight: lighter;
     word-spacing: 6px;
     letter-spacing: 3px;
@@ -115,8 +115,8 @@ hr {
 @media screen and (max-width: 890px) {
     
     .post-heading {
-        padding: 30px;
-      }
+        padding: 40px;
+    }
     
     
     #sobremi .post-heading h1 {
