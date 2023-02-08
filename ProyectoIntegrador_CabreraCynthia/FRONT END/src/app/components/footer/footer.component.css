@@ -1,17 +1,17 @@
-.footer-bar {
+.footer {
     width:100%;
-    max-height: 12vh;
+    min-height: 15vh;
     border-radius: 15px 15px 0 0;
 }
 
-.footer-bar h6 {
+.footer h6 {
     color:antiquewhite;
     padding:25px 0 0;
     word-spacing: 4px;
     font-size: 12px;
 }
 
-.footer-bar p {
+.footer p {
     color:antiquewhite;
     word-spacing: 4px;
     letter-spacing: 2px;

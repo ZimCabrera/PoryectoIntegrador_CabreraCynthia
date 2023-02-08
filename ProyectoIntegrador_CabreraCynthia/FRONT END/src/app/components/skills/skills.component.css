@@ -67,6 +67,10 @@
 
 @media screen and (max-width: 890px) {
     
+  #skills .skill {
+    padding: 40px 15px;
+  }
+
   #skills .skill h1 {
     font-size: 2rem;
   }

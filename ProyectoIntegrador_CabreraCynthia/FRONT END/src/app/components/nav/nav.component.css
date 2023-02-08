@@ -17,9 +17,6 @@ nav .logos img {
     width:120px;
 }
 
-nav .logos .pequeña-min {
-    width:200px;
-}
 
 
 .nav-item {
@@ -202,7 +199,7 @@ span{
     
     #login {
         margin: 8px;
-        padding: 0 5px;
+        padding: 0 10px;
         font-size: 25px;
     }
     
@@ -210,7 +207,7 @@ span{
 
     #onLogOut {
         margin: 8px;
-        padding: 0 5px;
+        padding: 0 10px;
         font-size: 25px;
     }
 }
